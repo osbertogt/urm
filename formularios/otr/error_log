@@ -1,0 +1,4226 @@
+[18-Dec-2025 01:11:54 UTC] === DEBUG SERVICIOS ===
+[18-Dec-2025 01:11:54 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 18
+    [inputNumero] => 
+    [inputFecha] => 2025-12-17T19:11
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 233
+            [2] => 28
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[18-Dec-2025 01:11:54 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 233
+    [2] => 28
+)
+
+[18-Dec-2025 01:11:54 UTC] Contenido de servicios: 34, 233, 28
+[19-Dec-2025 17:00:25 UTC] === DEBUG SERVICIOS ===
+[19-Dec-2025 17:00:25 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 18
+    [inputNumero] => 
+    [inputFecha] => 2025-12-19T11:00
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 2025-12-20
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 233
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[19-Dec-2025 17:00:25 UTC] Servicios recibido: Array
+(
+    [0] => 233
+)
+
+[19-Dec-2025 17:00:25 UTC] Contenido de servicios: 233
+[19-Dec-2025 21:17:21 UTC] === DEBUG SERVICIOS ===
+[19-Dec-2025 21:17:21 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 
+    [inputNumero] => 
+    [inputFecha] => 2025-12-19T21:17
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 
+    [abono] => 
+    [saldo] => 
+)
+
+[19-Dec-2025 21:17:21 UTC] Servicios recibido: NO EXISTE
+[19-Dec-2025 21:17:21 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[19-Dec-2025 21:17:21 UTC] Contenido de servicios: VACIO
+[19-Dec-2025 23:49:36 UTC] === DEBUG SERVICIOS ===
+[19-Dec-2025 23:49:36 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 
+    [inputNumero] => 
+    [inputFecha] => 2025-12-19T23:49
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 
+    [abono] => 
+    [saldo] => 
+)
+
+[19-Dec-2025 23:49:36 UTC] Servicios recibido: NO EXISTE
+[19-Dec-2025 23:49:36 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[19-Dec-2025 23:49:36 UTC] Contenido de servicios: VACIO
+[19-Dec-2025 23:50:21 UTC] === DEBUG SERVICIOS ===
+[19-Dec-2025 23:50:21 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 
+    [inputNumero] => 
+    [inputFecha] => 2025-12-19T23:49
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 34
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[19-Dec-2025 23:50:21 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 34
+)
+
+[19-Dec-2025 23:50:21 UTC] Contenido de servicios: 32, 34
+[19-Dec-2025 23:51:13 UTC] === DEBUG SERVICIOS ===
+[19-Dec-2025 23:51:13 UTC] POST completo: Array
+(
+    [id_atencion] => 60
+    [id_cliente] => 
+    [inputNumero] => 50
+    [inputFecha] => 2025-12-19T17:50
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+            [1] => 34
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[19-Dec-2025 23:51:13 UTC] Servicios recibido: Array
+(
+    [0] => 33
+    [1] => 34
+)
+
+[19-Dec-2025 23:51:13 UTC] Contenido de servicios: 33, 34
+[19-Dec-2025 23:51:23 UTC] === DEBUG SERVICIOS ===
+[19-Dec-2025 23:51:23 UTC] POST completo: Array
+(
+    [id_atencion] => 60
+    [id_cliente] => 
+    [inputNumero] => 50
+    [inputFecha] => 2025-12-19T17:50
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+            [1] => 34
+        )
+
+    [totalorden] => 0
+    [abono] => 0
+    [saldo] => 0
+)
+
+[19-Dec-2025 23:51:23 UTC] Servicios recibido: Array
+(
+    [0] => 33
+    [1] => 34
+)
+
+[19-Dec-2025 23:51:23 UTC] Contenido de servicios: 33, 34
+[20-Dec-2025 17:40:52 UTC] === DEBUG SERVICIOS ===
+[20-Dec-2025 17:40:52 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 
+    [inputNumero] => 
+    [inputFecha] => 2025-12-20T17:40
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 289
+            [2] => 260
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[20-Dec-2025 17:40:52 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 289
+    [2] => 260
+)
+
+[20-Dec-2025 17:40:52 UTC] Contenido de servicios: 34, 289, 260
+[21-Dec-2025 05:46:18 UTC] === DEBUG SERVICIOS ===
+[21-Dec-2025 05:46:18 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 
+    [inputNumero] => 
+    [inputFecha] => 2025-12-21T05:45
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 233
+            [2] => 289
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[21-Dec-2025 05:46:18 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 233
+    [2] => 289
+)
+
+[21-Dec-2025 05:46:18 UTC] Contenido de servicios: 34, 233, 289
+[21-Dec-2025 05:53:32 UTC] === DEBUG SERVICIOS ===
+[21-Dec-2025 05:53:32 UTC] POST completo: Array
+(
+    [id_atencion] => 62
+    [id_cliente] => 13
+    [inputNumero] => 52
+    [inputFecha] => 2025-12-20T23:51
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 47
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[21-Dec-2025 05:53:32 UTC] Servicios recibido: Array
+(
+    [0] => 47
+)
+
+[21-Dec-2025 05:53:32 UTC] Contenido de servicios: 47
+[21-Dec-2025 05:53:56 UTC] === DEBUG SERVICIOS ===
+[21-Dec-2025 05:53:56 UTC] POST completo: Array
+(
+    [id_atencion] => 62
+    [id_cliente] => 13
+    [inputNumero] => 52
+    [inputFecha] => 2025-12-20T23:51
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 47
+        )
+
+    [totalorden] => 0
+    [abono] => 0
+    [saldo] => 0
+)
+
+[21-Dec-2025 05:53:56 UTC] Servicios recibido: Array
+(
+    [0] => 47
+)
+
+[21-Dec-2025 05:53:56 UTC] Contenido de servicios: 47
+[21-Dec-2025 05:55:49 UTC] === DEBUG SERVICIOS ===
+[21-Dec-2025 05:55:49 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 17
+    [inputNumero] => 52
+    [inputFecha] => 2025-12-21T05:51
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 2025-12-19
+    [inputStat] => 
+    [notas] => laspruebas
+    [servicios] => Array
+        (
+            [0] => 48
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[21-Dec-2025 05:55:49 UTC] Servicios recibido: Array
+(
+    [0] => 48
+)
+
+[21-Dec-2025 05:55:49 UTC] Contenido de servicios: 48
+[21-Dec-2025 16:27:56 UTC] === DEBUG SERVICIOS ===
+[21-Dec-2025 16:27:56 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 19
+    [inputNumero] => 
+    [inputFecha] => 2025-12-21T16:26
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 233
+            [2] => 287
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[21-Dec-2025 16:27:56 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 233
+    [2] => 287
+)
+
+[21-Dec-2025 16:27:56 UTC] Contenido de servicios: 34, 233, 287
+[22-Dec-2025 01:40:19 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 01:40:19 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T01:39
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 42
+            [1] => 28
+            [2] => 274
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 01:40:19 UTC] Servicios recibido: Array
+(
+    [0] => 42
+    [1] => 28
+    [2] => 274
+)
+
+[22-Dec-2025 01:40:19 UTC] Contenido de servicios: 42, 28, 274
+[22-Dec-2025 01:41:39 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 01:41:39 UTC] POST completo: Array
+(
+    [id_atencion] => 71
+    [id_cliente] => 
+    [inputNumero] => 61
+    [inputFecha] => 2025-12-21T19:41
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 233
+            [2] => 287
+            [3] => 42
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 01:41:39 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 233
+    [2] => 287
+    [3] => 42
+)
+
+[22-Dec-2025 01:41:39 UTC] Contenido de servicios: 34, 233, 287, 42
+[22-Dec-2025 01:42:29 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 01:42:29 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 19
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T01:41
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 41
+            [1] => 244
+            [2] => 287
+            [3] => 47
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 01:42:29 UTC] Servicios recibido: Array
+(
+    [0] => 41
+    [1] => 244
+    [2] => 287
+    [3] => 47
+)
+
+[22-Dec-2025 01:42:29 UTC] Contenido de servicios: 41, 244, 287, 47
+[22-Dec-2025 04:16:43 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 04:16:43 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 18
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T04:16
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 47
+            [1] => 37
+            [2] => 33
+            [3] => 34
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 04:16:43 UTC] Servicios recibido: Array
+(
+    [0] => 47
+    [1] => 37
+    [2] => 33
+    [3] => 34
+)
+
+[22-Dec-2025 04:16:43 UTC] Contenido de servicios: 47, 37, 33, 34
+[22-Dec-2025 04:27:49 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 04:27:49 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T04:27
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 233
+            [1] => 139
+            [2] => 160
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 04:27:49 UTC] Servicios recibido: Array
+(
+    [0] => 233
+    [1] => 139
+    [2] => 160
+)
+
+[22-Dec-2025 04:27:49 UTC] Contenido de servicios: 233, 139, 160
+[22-Dec-2025 04:28:40 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 04:28:40 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T04:28
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 60
+            [1] => 253
+            [2] => 168
+            [3] => 59
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 04:28:40 UTC] Servicios recibido: Array
+(
+    [0] => 60
+    [1] => 253
+    [2] => 168
+    [3] => 59
+)
+
+[22-Dec-2025 04:28:40 UTC] Contenido de servicios: 60, 253, 168, 59
+[22-Dec-2025 04:30:03 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 04:30:03 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 20
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T04:29
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 233
+            [1] => 67
+            [2] => 178
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 04:30:03 UTC] Servicios recibido: Array
+(
+    [0] => 233
+    [1] => 67
+    [2] => 178
+)
+
+[22-Dec-2025 04:30:03 UTC] Contenido de servicios: 233, 67, 178
+[22-Dec-2025 18:32:40 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 18:32:40 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 19
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T18:31
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 2025-12-24
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 78
+            [2] => 239
+            [3] => 34
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 18:32:40 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 78
+    [2] => 239
+    [3] => 34
+)
+
+[22-Dec-2025 18:32:40 UTC] Contenido de servicios: 107, 78, 239, 34
+[22-Dec-2025 18:36:15 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 18:36:15 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 20
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T18:35
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 107
+            [2] => 239
+            [3] => 78
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 18:36:15 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 107
+    [2] => 239
+    [3] => 78
+)
+
+[22-Dec-2025 18:36:15 UTC] Contenido de servicios: 34, 107, 239, 78
+[22-Dec-2025 18:40:45 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 18:40:45 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 19
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T18:40
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2025-12-23
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 18:40:45 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[22-Dec-2025 18:40:45 UTC] Contenido de servicios: 32
+[22-Dec-2025 18:41:27 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 18:41:27 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 20
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T18:41
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 18:41:27 UTC] Servicios recibido: Array
+(
+    [0] => 34
+)
+
+[22-Dec-2025 18:41:27 UTC] Contenido de servicios: 34
+[22-Dec-2025 18:42:24 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 18:42:24 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 12
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T18:42
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 47
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 18:42:24 UTC] Servicios recibido: Array
+(
+    [0] => 47
+)
+
+[22-Dec-2025 18:42:24 UTC] Contenido de servicios: 47
+[22-Dec-2025 18:43:52 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 18:43:52 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 18
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T18:43
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 47
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 18:43:52 UTC] Servicios recibido: Array
+(
+    [0] => 47
+)
+
+[22-Dec-2025 18:43:52 UTC] Contenido de servicios: 47
+[22-Dec-2025 21:29:59 UTC] === DEBUG SERVICIOS ===
+[22-Dec-2025 21:29:59 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 21
+    [inputNumero] => 
+    [inputFecha] => 2025-12-22T21:29
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2025-12-22
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 272
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[22-Dec-2025 21:29:59 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 272
+)
+
+[22-Dec-2025 21:29:59 UTC] Contenido de servicios: 107, 272
+[23-Dec-2025 07:52:06 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 07:52:06 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 22
+    [inputNumero] => 
+    [inputFecha] => 2025-12-23T07:51
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 2025-12-24
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 43
+            [1] => 233
+            [2] => 275
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 07:52:06 UTC] Servicios recibido: Array
+(
+    [0] => 43
+    [1] => 233
+    [2] => 275
+)
+
+[23-Dec-2025 07:52:06 UTC] Contenido de servicios: 43, 233, 275
+[23-Dec-2025 10:11:09 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 10:11:09 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 18
+    [inputNumero] => 
+    [inputFecha] => 2025-12-23T04:10
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 104
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 10:11:09 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 104
+)
+
+[23-Dec-2025 10:11:09 UTC] Contenido de servicios: 34, 104
+[23-Dec-2025 10:12:15 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 10:12:15 UTC] POST completo: Array
+(
+    [id_atencion] => 104
+    [id_cliente] => 
+    [inputNumero] => 93
+    [inputFecha] => 2025-12-23T04:12
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 104
+            [2] => 183
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 10:12:15 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 104
+    [2] => 183
+)
+
+[23-Dec-2025 10:12:15 UTC] Contenido de servicios: 34, 104, 183
+[23-Dec-2025 10:13:32 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 10:13:32 UTC] POST completo: Array
+(
+    [id_atencion] => 104
+    [id_cliente] => 
+    [inputNumero] => 93
+    [inputFecha] => 2025-12-23T04:13
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 104
+            [2] => 183
+        )
+
+    [totalorden] => 0
+    [abono] => 0
+    [saldo] => 0
+)
+
+[23-Dec-2025 10:13:32 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 104
+    [2] => 183
+)
+
+[23-Dec-2025 10:13:32 UTC] Contenido de servicios: 34, 104, 183
+[23-Dec-2025 10:15:12 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 10:15:12 UTC] POST completo: Array
+(
+    [id_atencion] => 104
+    [id_cliente] => 
+    [inputNumero] => 93
+    [inputFecha] => 2025-12-23T04:15
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 104
+            [2] => 183
+            [3] => 162
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 10:15:12 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 104
+    [2] => 183
+    [3] => 162
+)
+
+[23-Dec-2025 10:15:12 UTC] Contenido de servicios: 34, 104, 183, 162
+[23-Dec-2025 16:31:04 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 16:31:04 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 21
+    [inputNumero] => 
+    [inputFecha] => 2025-12-23T10:29
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2025-12-24
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 293
+            [2] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 16:31:04 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 293
+    [2] => 32
+)
+
+[23-Dec-2025 16:31:04 UTC] Contenido de servicios: 107, 293, 32
+[23-Dec-2025 16:48:05 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 16:48:05 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 21
+    [inputNumero] => 
+    [inputFecha] => 2025-12-23T10:47
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 210
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 16:48:05 UTC] Servicios recibido: Array
+(
+    [0] => 210
+)
+
+[23-Dec-2025 16:48:05 UTC] Contenido de servicios: 210
+[23-Dec-2025 16:56:30 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 16:56:30 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 21
+    [inputNumero] => 
+    [inputFecha] => 2025-12-23T10:54
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2525-12-30
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 33
+            [2] => 47
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 16:56:30 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 33
+    [2] => 47
+)
+
+[23-Dec-2025 16:56:30 UTC] Contenido de servicios: 107, 33, 47
+[23-Dec-2025 16:56:51 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 16:56:51 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 22
+    [inputNumero] => 
+    [inputFecha] => 2025-12-29T10:53
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2025-12-29
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 16:56:51 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 33
+)
+
+[23-Dec-2025 16:56:51 UTC] Contenido de servicios: 107, 33
+[23-Dec-2025 17:11:48 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 17:11:48 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 13
+    [inputNumero] => 
+    [inputFecha] => 2025-12-23T11:11
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 288
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 17:11:48 UTC] Servicios recibido: Array
+(
+    [0] => 288
+)
+
+[23-Dec-2025 17:11:48 UTC] Contenido de servicios: 288
+[23-Dec-2025 17:26:14 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 17:26:14 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 
+    [inputNumero] => 
+    [inputFecha] => 2025-12-23T11:26
+    [id_medico] => 
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 35
+            [1] => 28
+            [2] => 31
+            [3] => 21
+            [4] => 16
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 17:26:14 UTC] Servicios recibido: Array
+(
+    [0] => 35
+    [1] => 28
+    [2] => 31
+    [3] => 21
+    [4] => 16
+)
+
+[23-Dec-2025 17:26:14 UTC] Contenido de servicios: 35, 28, 31, 21, 16
+[23-Dec-2025 17:26:52 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 17:26:52 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 23
+    [inputNumero] => 
+    [inputFecha] => 2025-12-23T11:24
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 2025-12-25
+    [inputStat] => 
+    [notas] => notas
+    [servicios] => Array
+        (
+            [0] => 269
+            [1] => 289
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 17:26:52 UTC] Servicios recibido: Array
+(
+    [0] => 269
+    [1] => 289
+)
+
+[23-Dec-2025 17:26:52 UTC] Contenido de servicios: 269, 289
+[23-Dec-2025 17:26:59 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 17:26:59 UTC] POST completo: Array
+(
+    [id_atencion] => 117
+    [id_cliente] => 18
+    [inputNumero] => 106
+    [inputFecha] => 2025-12-23T11:26
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 16
+            [1] => 21
+            [2] => 28
+            [3] => 31
+            [4] => 35
+        )
+
+    [totalorden] => 0
+    [abono] => 0
+    [saldo] => 0
+)
+
+[23-Dec-2025 17:26:59 UTC] Servicios recibido: Array
+(
+    [0] => 16
+    [1] => 21
+    [2] => 28
+    [3] => 31
+    [4] => 35
+)
+
+[23-Dec-2025 17:26:59 UTC] Contenido de servicios: 16, 21, 28, 31, 35
+[23-Dec-2025 17:28:15 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 17:28:15 UTC] POST completo: Array
+(
+    [id_atencion] => 118
+    [id_cliente] => 23
+    [inputNumero] => 107
+    [inputFecha] => 2025-12-23T11:28
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 2025-12-25
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 269
+            [1] => 289
+            [2] => 233
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 17:28:15 UTC] Servicios recibido: Array
+(
+    [0] => 269
+    [1] => 289
+    [2] => 233
+)
+
+[23-Dec-2025 17:28:15 UTC] Contenido de servicios: 269, 289, 233
+[23-Dec-2025 17:33:30 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 17:33:30 UTC] POST completo: Array
+(
+    [id_atencion] => 121
+    [id_cliente] => 22
+    [inputNumero] => 110
+    [inputFecha] => 2025-12-23T11:32
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => hx de hematuria 
+    [totalorden] => 0
+    [abono] => 
+    [saldo] => 
+)
+
+[23-Dec-2025 17:33:30 UTC] Servicios recibido: NO EXISTE
+[23-Dec-2025 17:33:30 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[23-Dec-2025 17:33:30 UTC] Contenido de servicios: VACIO
+[23-Dec-2025 17:33:44 UTC] === DEBUG SERVICIOS ===
+[23-Dec-2025 17:33:44 UTC] POST completo: Array
+(
+    [id_atencion] => 113
+    [id_cliente] => 22
+    [inputNumero] => 102
+    [inputFecha] => 2025-12-23T11:32
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => hx de hematuria 
+    [servicios] => Array
+        (
+            [0] => 233
+            [1] => 233
+            [2] => 244
+            [3] => 294
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Dec-2025 17:33:44 UTC] Servicios recibido: Array
+(
+    [0] => 233
+    [1] => 233
+    [2] => 244
+    [3] => 294
+)
+
+[23-Dec-2025 17:33:44 UTC] Contenido de servicios: 233, 233, 244, 294
+[12-Jan-2026 18:02:20 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:02:20 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 48
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T12:01
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[12-Jan-2026 18:02:20 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[12-Jan-2026 18:02:20 UTC] Contenido de servicios: 32
+[12-Jan-2026 18:02:40 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:02:40 UTC] POST completo: Array
+(
+    [id_atencion] => 176
+    [id_cliente] => 48
+    [inputNumero] => 158
+    [inputFecha] => 2026-01-12T12:01
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 273
+        )
+
+    [totalorden] => 300.00
+    [abono] => 
+    [saldo] => 300.00
+)
+
+[12-Jan-2026 18:02:40 UTC] Servicios recibido: Array
+(
+    [0] => 273
+)
+
+[12-Jan-2026 18:02:40 UTC] Contenido de servicios: 273
+[12-Jan-2026 18:03:12 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:03:12 UTC] POST completo: Array
+(
+    [id_atencion] => 176
+    [id_cliente] => 48
+    [inputNumero] => 158
+    [inputFecha] => 2026-01-12T12:01
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 273
+            [1] => 32
+        )
+
+    [totalorden] => 300.00
+    [abono] => 0
+    [saldo] => 300.00
+)
+
+[12-Jan-2026 18:03:12 UTC] Servicios recibido: Array
+(
+    [0] => 273
+    [1] => 32
+)
+
+[12-Jan-2026 18:03:12 UTC] Contenido de servicios: 273, 32
+[12-Jan-2026 18:08:44 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:08:44 UTC] POST completo: Array
+(
+    [id_atencion] => 176
+    [id_cliente] => 80
+    [inputNumero] => 158
+    [inputFecha] => 2026-01-12T12:08
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 273
+        )
+
+    [totalorden] => 250.00
+    [abono] => 0
+    [saldo] => 250.00
+)
+
+[12-Jan-2026 18:08:44 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 273
+)
+
+[12-Jan-2026 18:08:44 UTC] Contenido de servicios: 32, 273
+[12-Jan-2026 18:25:14 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:25:14 UTC] POST completo: Array
+(
+    [id_atencion] => 171
+    [id_cliente] => 74
+    [inputNumero] => 153
+    [inputFecha] => 2026-01-12T12:24
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[12-Jan-2026 18:25:14 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[12-Jan-2026 18:25:14 UTC] Contenido de servicios: 32
+[12-Jan-2026 18:26:19 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:26:19 UTC] POST completo: Array
+(
+    [id_atencion] => 171
+    [id_cliente] => 74
+    [inputNumero] => 153
+    [inputFecha] => 2026-01-12T12:26
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 287
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[12-Jan-2026 18:26:19 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 287
+)
+
+[12-Jan-2026 18:26:19 UTC] Contenido de servicios: 32, 287
+[12-Jan-2026 18:47:54 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:47:54 UTC] POST completo: Array
+(
+    [id_atencion] => 171
+    [id_cliente] => 74
+    [inputNumero] => 153
+    [inputFecha] => 2026-01-12T12:47
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 287
+        )
+
+    [totalorden] => 200.00
+    [abono] => 0
+    [saldo] => 200.00
+)
+
+[12-Jan-2026 18:47:54 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 287
+)
+
+[12-Jan-2026 18:47:54 UTC] Contenido de servicios: 32, 287
+[12-Jan-2026 18:48:01 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:48:01 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 25
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T12:47
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 
+    [abono] => 
+    [saldo] => 
+)
+
+[12-Jan-2026 18:48:01 UTC] Servicios recibido: NO EXISTE
+[12-Jan-2026 18:48:01 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[12-Jan-2026 18:48:01 UTC] Contenido de servicios: VACIO
+[12-Jan-2026 18:49:33 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:49:33 UTC] POST completo: Array
+(
+    [id_atencion] => 171
+    [id_cliente] => 74
+    [inputNumero] => 153
+    [inputFecha] => 2026-01-12T12:49
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 287
+        )
+
+    [totalorden] => 200.00
+    [abono] => 0
+    [saldo] => 200.00
+)
+
+[12-Jan-2026 18:49:33 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 287
+)
+
+[12-Jan-2026 18:49:33 UTC] Contenido de servicios: 32, 287
+[12-Jan-2026 18:55:20 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:55:20 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 74
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T12:54
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 287
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[12-Jan-2026 18:55:20 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 287
+)
+
+[12-Jan-2026 18:55:20 UTC] Contenido de servicios: 32, 287
+[12-Jan-2026 18:57:11 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 18:57:11 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 74
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T12:56
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 239
+            [1] => 210
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[12-Jan-2026 18:57:11 UTC] Servicios recibido: Array
+(
+    [0] => 239
+    [1] => 210
+)
+
+[12-Jan-2026 18:57:11 UTC] Contenido de servicios: 239, 210
+[12-Jan-2026 19:03:57 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 19:03:57 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 84
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T13:03
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 271
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[12-Jan-2026 19:03:57 UTC] Servicios recibido: Array
+(
+    [0] => 271
+)
+
+[12-Jan-2026 19:03:57 UTC] Contenido de servicios: 271
+[12-Jan-2026 19:07:56 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 19:07:56 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 74
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T13:06
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 239
+            [2] => 210
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[12-Jan-2026 19:07:56 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 239
+    [2] => 210
+)
+
+[12-Jan-2026 19:07:56 UTC] Contenido de servicios: 32, 239, 210
+[12-Jan-2026 19:08:30 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 19:08:30 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 74
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T13:08
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[12-Jan-2026 19:08:30 UTC] Servicios recibido: NO EXISTE
+[12-Jan-2026 19:08:30 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[12-Jan-2026 19:08:30 UTC] Contenido de servicios: VACIO
+[12-Jan-2026 19:11:23 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 19:11:23 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 74
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T10:10
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 
+    [abono] => 
+    [saldo] => 
+)
+
+[12-Jan-2026 19:11:23 UTC] Servicios recibido: NO EXISTE
+[12-Jan-2026 19:11:23 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[12-Jan-2026 19:11:23 UTC] Contenido de servicios: VACIO
+[12-Jan-2026 19:11:41 UTC] === DEBUG SERVICIOS ===
+[12-Jan-2026 19:11:41 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 74
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T13:11
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 
+    [abono] => 
+    [saldo] => 
+)
+
+[12-Jan-2026 19:11:41 UTC] Servicios recibido: NO EXISTE
+[12-Jan-2026 19:11:41 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[12-Jan-2026 19:11:41 UTC] Contenido de servicios: VACIO
+[13-Jan-2026 15:51:11 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 15:51:11 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 85
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T09:50
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 15:51:11 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[13-Jan-2026 15:51:11 UTC] Contenido de servicios: 33
+[13-Jan-2026 15:51:57 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 15:51:57 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 85
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T09:51
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 15:51:57 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[13-Jan-2026 15:51:57 UTC] Contenido de servicios: 33
+[13-Jan-2026 16:12:28 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 16:12:28 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 87
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T10:12
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 
+    [abono] => 
+    [saldo] => 
+)
+
+[13-Jan-2026 16:12:28 UTC] Servicios recibido: NO EXISTE
+[13-Jan-2026 16:12:28 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[13-Jan-2026 16:12:28 UTC] Contenido de servicios: VACIO
+[13-Jan-2026 16:18:33 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 16:18:33 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 87
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T10:17
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 16:18:33 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[13-Jan-2026 16:18:33 UTC] Contenido de servicios: 33
+[13-Jan-2026 16:34:51 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 16:34:51 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 88
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T10:34
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 16:34:51 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[13-Jan-2026 16:34:51 UTC] Contenido de servicios: 32
+[13-Jan-2026 16:57:53 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 16:57:53 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 89
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T10:57
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 16:57:53 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[13-Jan-2026 16:57:53 UTC] Contenido de servicios: 32
+[13-Jan-2026 17:19:05 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 17:19:05 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 86
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T11:17
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 17:19:05 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[13-Jan-2026 17:19:05 UTC] Contenido de servicios: 33
+[13-Jan-2026 17:48:46 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 17:48:46 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 90
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T11:48
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 17:48:46 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[13-Jan-2026 17:48:46 UTC] Contenido de servicios: 33
+[13-Jan-2026 18:24:31 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 18:24:31 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 91
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T12:24
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 18:24:31 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[13-Jan-2026 18:24:31 UTC] Contenido de servicios: 32
+[13-Jan-2026 18:41:46 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 18:41:46 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 92
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T12:40
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 18:41:46 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[13-Jan-2026 18:41:46 UTC] Contenido de servicios: 32
+[13-Jan-2026 19:33:19 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 19:33:19 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 94
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T13:29
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+            [1] => 107
+            [2] => 239
+            [3] => 55
+            [4] => 58
+            [5] => 233
+            [6] => 235
+            [7] => 234
+            [8] => 119
+            [9] => 120
+            [10] => 200
+            [11] => 195
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 19:33:19 UTC] Servicios recibido: Array
+(
+    [0] => 33
+    [1] => 107
+    [2] => 239
+    [3] => 55
+    [4] => 58
+    [5] => 233
+    [6] => 235
+    [7] => 234
+    [8] => 119
+    [9] => 120
+    [10] => 200
+    [11] => 195
+)
+
+[13-Jan-2026 19:33:19 UTC] Contenido de servicios: 33, 107, 239, 55, 58, 233, 235, 234, 119, 120, 200, 195
+[13-Jan-2026 19:36:04 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 19:36:04 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 94
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T13:35
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 196
+            [1] => 197
+            [2] => 198
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 19:36:04 UTC] Servicios recibido: Array
+(
+    [0] => 196
+    [1] => 197
+    [2] => 198
+)
+
+[13-Jan-2026 19:36:04 UTC] Contenido de servicios: 196, 197, 198
+[13-Jan-2026 19:38:48 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 19:38:48 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 93
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T13:38
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 19:38:48 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[13-Jan-2026 19:38:48 UTC] Contenido de servicios: 33
+[13-Jan-2026 19:39:58 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 19:39:58 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 95
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T13:39
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 19:39:58 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[13-Jan-2026 19:39:58 UTC] Contenido de servicios: 33
+[13-Jan-2026 19:48:06 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 19:48:06 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 96
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T13:45
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 287
+            [2] => 107
+            [3] => 55
+            [4] => 58
+            [5] => 235
+            [6] => 234
+            [7] => 239
+            [8] => 210
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 19:48:06 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 287
+    [2] => 107
+    [3] => 55
+    [4] => 58
+    [5] => 235
+    [6] => 234
+    [7] => 239
+    [8] => 210
+)
+
+[13-Jan-2026 19:48:06 UTC] Contenido de servicios: 32, 287, 107, 55, 58, 235, 234, 239, 210
+[13-Jan-2026 20:06:41 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 20:06:41 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 97
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T14:06
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 20:06:41 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[13-Jan-2026 20:06:41 UTC] Contenido de servicios: 32
+[13-Jan-2026 20:08:20 UTC] === DEBUG SERVICIOS ===
+[13-Jan-2026 20:08:20 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 97
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T14:07
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[13-Jan-2026 20:08:20 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[13-Jan-2026 20:08:20 UTC] Contenido de servicios: 32
+[14-Jan-2026 15:54:37 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 15:54:37 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 99
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T09:54
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 15:54:37 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[14-Jan-2026 15:54:37 UTC] Contenido de servicios: 32
+[14-Jan-2026 16:08:12 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 16:08:12 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 100
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T10:05
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 107
+            [2] => 55
+            [3] => 58
+            [4] => 235
+            [5] => 234
+            [6] => 68
+            [7] => 69
+            [8] => 73
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 16:08:12 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 107
+    [2] => 55
+    [3] => 58
+    [4] => 235
+    [5] => 234
+    [6] => 68
+    [7] => 69
+    [8] => 73
+)
+
+[14-Jan-2026 16:08:12 UTC] Contenido de servicios: 32, 107, 55, 58, 235, 234, 68, 69, 73
+[14-Jan-2026 17:03:00 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 17:03:00 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 98
+    [inputNumero] => 
+    [inputFecha] => 2026-01-13T11:02
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 2026-01-13
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 17:03:00 UTC] Servicios recibido: Array
+(
+    [0] => 34
+)
+
+[14-Jan-2026 17:03:00 UTC] Contenido de servicios: 34
+[14-Jan-2026 17:48:08 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 17:48:08 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 103
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T11:47
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 17:48:08 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[14-Jan-2026 17:48:08 UTC] Contenido de servicios: 32
+[14-Jan-2026 18:10:52 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 18:10:52 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 106
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T12:10
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 18:10:52 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[14-Jan-2026 18:10:52 UTC] Contenido de servicios: 33
+[14-Jan-2026 19:01:12 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 19:01:12 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 102
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T13:00
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 107
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 19:01:12 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 107
+)
+
+[14-Jan-2026 19:01:12 UTC] Contenido de servicios: 34, 107
+[14-Jan-2026 19:07:00 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 19:07:00 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 105
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T13:02
+    [id_medico] => 3
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 34
+            [1] => 107
+            [2] => 78
+            [3] => 239
+            [4] => 55
+            [5] => 235
+            [6] => 234
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 19:07:00 UTC] Servicios recibido: Array
+(
+    [0] => 34
+    [1] => 107
+    [2] => 78
+    [3] => 239
+    [4] => 55
+    [5] => 235
+    [6] => 234
+)
+
+[14-Jan-2026 19:07:00 UTC] Contenido de servicios: 34, 107, 78, 239, 55, 235, 234
+[14-Jan-2026 19:19:06 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 19:19:06 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 104
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T13:18
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 19:19:06 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[14-Jan-2026 19:19:06 UTC] Contenido de servicios: 32
+[14-Jan-2026 19:23:29 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 19:23:29 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 107
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T13:23
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 158
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 19:23:29 UTC] Servicios recibido: Array
+(
+    [0] => 158
+)
+
+[14-Jan-2026 19:23:29 UTC] Contenido de servicios: 158
+[14-Jan-2026 19:29:46 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 19:29:46 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 100
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T13:28
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 107
+            [2] => 55
+            [3] => 58
+            [4] => 235
+            [5] => 234
+            [6] => 69
+            [7] => 68
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 19:29:46 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 107
+    [2] => 55
+    [3] => 58
+    [4] => 235
+    [5] => 234
+    [6] => 69
+    [7] => 68
+)
+
+[14-Jan-2026 19:29:46 UTC] Contenido de servicios: 32, 107, 55, 58, 235, 234, 69, 68
+[14-Jan-2026 19:32:39 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 19:32:39 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 100
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T13:31
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 107
+            [2] => 55
+            [3] => 58
+            [4] => 235
+            [5] => 234
+            [6] => 69
+            [7] => 68
+            [8] => 73
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 19:32:39 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 107
+    [2] => 55
+    [3] => 58
+    [4] => 235
+    [5] => 234
+    [6] => 69
+    [7] => 68
+    [8] => 73
+)
+
+[14-Jan-2026 19:32:39 UTC] Contenido de servicios: 32, 107, 55, 58, 235, 234, 69, 68, 73
+[14-Jan-2026 19:34:35 UTC] === DEBUG SERVICIOS ===
+[14-Jan-2026 19:34:35 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 108
+    [inputNumero] => 
+    [inputFecha] => 2026-01-14T13:34
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-14
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[14-Jan-2026 19:34:35 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[14-Jan-2026 19:34:35 UTC] Contenido de servicios: 32
+[19-Jan-2026 19:35:08 UTC] === DEBUG SERVICIOS ===
+[19-Jan-2026 19:35:08 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 131
+    [inputNumero] => 
+    [inputFecha] => 2026-01-19T13:33
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-19
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 310
+            [1] => 311
+            [2] => 311
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[19-Jan-2026 19:35:08 UTC] Servicios recibido: Array
+(
+    [0] => 310
+    [1] => 311
+    [2] => 311
+)
+
+[19-Jan-2026 19:35:08 UTC] Contenido de servicios: 310, 311, 311
+[20-Jan-2026 17:50:55 UTC] === DEBUG SERVICIOS ===
+[20-Jan-2026 17:50:55 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 137
+    [inputNumero] => 
+    [inputFecha] => 2026-01-20T11:43
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-20
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 55
+            [2] => 58
+            [3] => 195
+            [4] => 196
+            [5] => 197
+            [6] => 198
+            [7] => 233
+            [8] => 235
+            [9] => 234
+            [10] => 119
+            [11] => 120
+            [12] => 200
+            [13] => 90
+            [14] => 312
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[20-Jan-2026 17:50:55 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 55
+    [2] => 58
+    [3] => 195
+    [4] => 196
+    [5] => 197
+    [6] => 198
+    [7] => 233
+    [8] => 235
+    [9] => 234
+    [10] => 119
+    [11] => 120
+    [12] => 200
+    [13] => 90
+    [14] => 312
+)
+
+[20-Jan-2026 17:50:55 UTC] Contenido de servicios: 107, 55, 58, 195, 196, 197, 198, 233, 235, 234, 119, 120, 200, 90, 312
+[20-Jan-2026 18:00:50 UTC] === DEBUG SERVICIOS ===
+[20-Jan-2026 18:00:50 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 136
+    [inputNumero] => 
+    [inputFecha] => 2026-01-20T11:52
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-20
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 55
+            [2] => 58
+            [3] => 195
+            [4] => 196
+            [5] => 197
+            [6] => 198
+            [7] => 233
+            [8] => 235
+            [9] => 234
+            [10] => 90
+            [11] => 119
+            [12] => 120
+            [13] => 200
+            [14] => 312
+            [15] => 313
+            [16] => 309
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[20-Jan-2026 18:00:50 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 55
+    [2] => 58
+    [3] => 195
+    [4] => 196
+    [5] => 197
+    [6] => 198
+    [7] => 233
+    [8] => 235
+    [9] => 234
+    [10] => 90
+    [11] => 119
+    [12] => 120
+    [13] => 200
+    [14] => 312
+    [15] => 313
+    [16] => 309
+)
+
+[20-Jan-2026 18:00:50 UTC] Contenido de servicios: 107, 55, 58, 195, 196, 197, 198, 233, 235, 234, 90, 119, 120, 200, 312, 313, 309
+[20-Jan-2026 18:05:13 UTC] === DEBUG SERVICIOS ===
+[20-Jan-2026 18:05:13 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 65
+    [inputNumero] => 
+    [inputFecha] => 2026-01-20T12:04
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-20
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 314
+            [1] => 310
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[20-Jan-2026 18:05:13 UTC] Servicios recibido: Array
+(
+    [0] => 314
+    [1] => 310
+)
+
+[20-Jan-2026 18:05:13 UTC] Contenido de servicios: 314, 310
+[20-Jan-2026 18:09:39 UTC] === DEBUG SERVICIOS ===
+[20-Jan-2026 18:09:39 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 138
+    [inputNumero] => 
+    [inputFecha] => 2026-01-20T12:09
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-20
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 287
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[20-Jan-2026 18:09:39 UTC] Servicios recibido: Array
+(
+    [0] => 287
+)
+
+[20-Jan-2026 18:09:39 UTC] Contenido de servicios: 287
+[20-Jan-2026 18:10:57 UTC] === DEBUG SERVICIOS ===
+[20-Jan-2026 18:10:57 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 134
+    [inputNumero] => 
+    [inputFecha] => 2026-01-20T12:10
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-20
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 316
+            [1] => 315
+            [2] => 315
+            [3] => 315
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[20-Jan-2026 18:10:57 UTC] Servicios recibido: Array
+(
+    [0] => 316
+    [1] => 315
+    [2] => 315
+    [3] => 315
+)
+
+[20-Jan-2026 18:10:57 UTC] Contenido de servicios: 316, 315, 315, 315
+[20-Jan-2026 18:15:55 UTC] === DEBUG SERVICIOS ===
+[20-Jan-2026 18:15:55 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 134
+    [inputNumero] => 
+    [inputFecha] => 2026-01-20T12:15
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-20
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 316
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[20-Jan-2026 18:15:55 UTC] Servicios recibido: Array
+(
+    [0] => 316
+)
+
+[20-Jan-2026 18:15:55 UTC] Contenido de servicios: 316
+[23-Jan-2026 16:44:36 UTC] === DEBUG SERVICIOS ===
+[23-Jan-2026 16:44:36 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 146
+    [inputNumero] => 
+    [inputFecha] => 2026-01-23T10:44
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-23
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Jan-2026 16:44:36 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[23-Jan-2026 16:44:36 UTC] Contenido de servicios: 32
+[23-Jan-2026 16:45:48 UTC] === DEBUG SERVICIOS ===
+[23-Jan-2026 16:45:48 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 146
+    [inputNumero] => 
+    [inputFecha] => 2026-01-23T10:45
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-23
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 239
+            [1] => 210
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Jan-2026 16:45:48 UTC] Servicios recibido: Array
+(
+    [0] => 239
+    [1] => 210
+)
+
+[23-Jan-2026 16:45:48 UTC] Contenido de servicios: 239, 210
+[23-Jan-2026 17:05:16 UTC] === DEBUG SERVICIOS ===
+[23-Jan-2026 17:05:16 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 55
+    [inputNumero] => 
+    [inputFecha] => 2026-01-23T11:05
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-23
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 318
+            [1] => 318
+            [2] => 317
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[23-Jan-2026 17:05:16 UTC] Servicios recibido: Array
+(
+    [0] => 318
+    [1] => 318
+    [2] => 317
+)
+
+[23-Jan-2026 17:05:16 UTC] Contenido de servicios: 318, 318, 317
+[04-Feb-2026 17:26:27 UTC] === DEBUG SERVICIOS ===
+[04-Feb-2026 17:26:27 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 185
+    [inputNumero] => 
+    [inputFecha] => 2026-02-04T11:26
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-04
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 319
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[04-Feb-2026 17:26:27 UTC] Servicios recibido: Array
+(
+    [0] => 319
+)
+
+[04-Feb-2026 17:26:27 UTC] Contenido de servicios: 319
+[05-Feb-2026 18:44:37 UTC] === DEBUG SERVICIOS ===
+[05-Feb-2026 18:44:37 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 192
+    [inputNumero] => 
+    [inputFecha] => 2026-02-05T12:44
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 319
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[05-Feb-2026 18:44:37 UTC] Servicios recibido: Array
+(
+    [0] => 319
+)
+
+[05-Feb-2026 18:44:37 UTC] Contenido de servicios: 319
+[05-Feb-2026 18:48:03 UTC] === DEBUG SERVICIOS ===
+[05-Feb-2026 18:48:03 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 192
+    [inputNumero] => 
+    [inputFecha] => 2026-02-05T12:47
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-05
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 320
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[05-Feb-2026 18:48:03 UTC] Servicios recibido: Array
+(
+    [0] => 320
+)
+
+[05-Feb-2026 18:48:03 UTC] Contenido de servicios: 320
+[09-Feb-2026 18:51:22 UTC] === DEBUG SERVICIOS ===
+[09-Feb-2026 18:51:22 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 208
+    [inputNumero] => 
+    [inputFecha] => 2026-02-09T12:50
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-09
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 321
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[09-Feb-2026 18:51:22 UTC] Servicios recibido: Array
+(
+    [0] => 321
+)
+
+[09-Feb-2026 18:51:22 UTC] Contenido de servicios: 321
+[10-Feb-2026 19:04:27 UTC] === DEBUG SERVICIOS ===
+[10-Feb-2026 19:04:27 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 210
+    [inputNumero] => 
+    [inputFecha] => 2026-02-09T13:03
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-09
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 200
+            [1] => 201
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[10-Feb-2026 19:04:27 UTC] Servicios recibido: Array
+(
+    [0] => 200
+    [1] => 201
+)
+
+[10-Feb-2026 19:04:27 UTC] Contenido de servicios: 200, 201
+[11-Feb-2026 22:42:55 UTC] === DEBUG SERVICIOS ===
+[11-Feb-2026 22:42:55 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 107
+    [inputNumero] => 
+    [inputFecha] => 2026-02-10T16:42
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-10
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 200
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[11-Feb-2026 22:42:55 UTC] Servicios recibido: Array
+(
+    [0] => 200
+)
+
+[11-Feb-2026 22:42:55 UTC] Contenido de servicios: 200
+[11-Feb-2026 22:48:38 UTC] === DEBUG SERVICIOS ===
+[11-Feb-2026 22:48:38 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 188
+    [inputNumero] => 
+    [inputFecha] => 2026-02-11T16:46
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-11
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 55
+            [2] => 58
+            [3] => 235
+            [4] => 234
+            [5] => 68
+            [6] => 69
+            [7] => 73
+            [8] => 110
+            [9] => 108
+            [10] => 109
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[11-Feb-2026 22:48:38 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 55
+    [2] => 58
+    [3] => 235
+    [4] => 234
+    [5] => 68
+    [6] => 69
+    [7] => 73
+    [8] => 110
+    [9] => 108
+    [10] => 109
+)
+
+[11-Feb-2026 22:48:38 UTC] Contenido de servicios: 107, 55, 58, 235, 234, 68, 69, 73, 110, 108, 109
+[11-Feb-2026 22:59:22 UTC] === DEBUG SERVICIOS ===
+[11-Feb-2026 22:59:22 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 201
+    [inputNumero] => 
+    [inputFecha] => 2026-02-11T16:58
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-11
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 55
+            [2] => 58
+            [3] => 235
+            [4] => 234
+            [5] => 200
+            [6] => 293
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[11-Feb-2026 22:59:22 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 55
+    [2] => 58
+    [3] => 235
+    [4] => 234
+    [5] => 200
+    [6] => 293
+)
+
+[11-Feb-2026 22:59:22 UTC] Contenido de servicios: 107, 55, 58, 235, 234, 200, 293
+[17-Feb-2026 16:39:39 UTC] === DEBUG SERVICIOS ===
+[17-Feb-2026 16:39:39 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 239
+    [inputNumero] => 
+    [inputFecha] => 2026-02-17T10:15
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-17
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 239
+            [2] => 55
+            [3] => 235
+            [4] => 234
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[17-Feb-2026 16:39:39 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 239
+    [2] => 55
+    [3] => 235
+    [4] => 234
+)
+
+[17-Feb-2026 16:39:39 UTC] Contenido de servicios: 107, 239, 55, 235, 234
+[17-Feb-2026 16:40:39 UTC] === DEBUG SERVICIOS ===
+[17-Feb-2026 16:40:39 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 239
+    [inputNumero] => 
+    [inputFecha] => 2026-02-17T10:40
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-17
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 272
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[17-Feb-2026 16:40:39 UTC] Servicios recibido: Array
+(
+    [0] => 272
+)
+
+[17-Feb-2026 16:40:39 UTC] Contenido de servicios: 272
+[17-Feb-2026 22:13:51 UTC] === DEBUG SERVICIOS ===
+[17-Feb-2026 22:13:51 UTC] POST completo: Array
+(
+    [id_atencion] => 462
+    [id_cliente] => 
+    [inputNumero] => 401
+    [inputFecha] => 2026-02-17T16:13
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[17-Feb-2026 22:13:51 UTC] Servicios recibido: NO EXISTE
+[17-Feb-2026 22:13:51 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[17-Feb-2026 22:13:51 UTC] Contenido de servicios: VACIO
+[17-Feb-2026 22:15:23 UTC] === DEBUG SERVICIOS ===
+[17-Feb-2026 22:15:23 UTC] POST completo: Array
+(
+    [id_atencion] => 462
+    [id_cliente] => 47
+    [inputNumero] => 401
+    [inputFecha] => 2026-02-17T16:15
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 60
+            [1] => 107
+        )
+
+    [totalorden] => 
+    [abono] => 
+    [saldo] => 
+)
+
+[17-Feb-2026 22:15:23 UTC] Servicios recibido: Array
+(
+    [0] => 60
+    [1] => 107
+)
+
+[17-Feb-2026 22:15:23 UTC] Contenido de servicios: 60, 107
+[17-Feb-2026 22:25:53 UTC] === DEBUG SERVICIOS ===
+[17-Feb-2026 22:25:53 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 74
+    [inputNumero] => 
+    [inputFecha] => 2026-01-12T16:24
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-12
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 239
+            [2] => 210
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[17-Feb-2026 22:25:53 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 239
+    [2] => 210
+)
+
+[17-Feb-2026 22:25:53 UTC] Contenido de servicios: 32, 239, 210
+[17-Feb-2026 22:30:55 UTC] === DEBUG SERVICIOS ===
+[17-Feb-2026 22:30:55 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 74
+    [inputNumero] => 
+    [inputFecha] => 2026-01-19T16:29
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-01-19
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 55
+            [2] => 235
+            [3] => 234
+            [4] => 287
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[17-Feb-2026 22:30:55 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 55
+    [2] => 235
+    [3] => 234
+    [4] => 287
+)
+
+[17-Feb-2026 22:30:55 UTC] Contenido de servicios: 107, 55, 235, 234, 287
+[17-Feb-2026 22:37:49 UTC] === DEBUG SERVICIOS ===
+[17-Feb-2026 22:37:49 UTC] POST completo: Array
+(
+    [id_atencion] => 459
+    [id_cliente] => 
+    [inputNumero] => 398
+    [inputFecha] => 2026-02-17T16:37
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[17-Feb-2026 22:37:49 UTC] Servicios recibido: NO EXISTE
+[17-Feb-2026 22:37:49 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[17-Feb-2026 22:37:49 UTC] Contenido de servicios: VACIO
+[18-Feb-2026 15:43:04 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 15:43:04 UTC] POST completo: Array
+(
+    [id_atencion] => 465
+    [id_cliente] => 
+    [inputNumero] => 404
+    [inputFecha] => 2026-02-18T09:42
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-18
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 54
+        )
+
+    [totalorden] => 300.00
+    [abono] => 
+    [saldo] => 300.00
+)
+
+[18-Feb-2026 15:43:04 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 54
+)
+
+[18-Feb-2026 15:43:04 UTC] Contenido de servicios: 32, 54
+[18-Feb-2026 16:46:41 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 16:46:41 UTC] POST completo: Array
+(
+    [id_atencion] => 466
+    [id_cliente] => 
+    [inputNumero] => 405
+    [inputFecha] => 2026-02-18T10:46
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-18
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 322
+        )
+
+    [totalorden] => 250.00
+    [abono] => 
+    [saldo] => 250.00
+)
+
+[18-Feb-2026 16:46:41 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 322
+)
+
+[18-Feb-2026 16:46:41 UTC] Contenido de servicios: 32, 322
+[18-Feb-2026 16:50:23 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 16:50:23 UTC] POST completo: Array
+(
+    [id_atencion] => 459
+    [id_cliente] => 
+    [inputNumero] => 398
+    [inputFecha] => 2026-02-17T10:50
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[18-Feb-2026 16:50:23 UTC] Servicios recibido: NO EXISTE
+[18-Feb-2026 16:50:23 UTC] PHP Warning:  Undefined array key "servicios" in /home/datapluscom/public_html/urm/formularios/otr/guardar_atencion.php on line 8
+[18-Feb-2026 16:50:23 UTC] Contenido de servicios: VACIO
+[18-Feb-2026 16:56:58 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 16:56:58 UTC] POST completo: Array
+(
+    [id_atencion] => 412
+    [id_cliente] => 
+    [inputNumero] => 351
+    [inputFecha] => 2026-02-17T10:56
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-17
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 158
+            [2] => 56
+            [3] => 235
+            [4] => 234
+            [5] => 90
+            [6] => 68
+            [7] => 69
+            [8] => 73
+            [9] => 110
+            [10] => 108
+            [11] => 109
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[18-Feb-2026 16:56:58 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 158
+    [2] => 56
+    [3] => 235
+    [4] => 234
+    [5] => 90
+    [6] => 68
+    [7] => 69
+    [8] => 73
+    [9] => 110
+    [10] => 108
+    [11] => 109
+)
+
+[18-Feb-2026 16:56:58 UTC] Contenido de servicios: 107, 158, 56, 235, 234, 90, 68, 69, 73, 110, 108, 109
+[18-Feb-2026 17:17:14 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 17:17:14 UTC] POST completo: Array
+(
+    [id_atencion] => 458
+    [id_cliente] => 
+    [inputNumero] => 397
+    [inputFecha] => 2026-02-17T11:17
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 55
+            [2] => 58
+            [3] => 235
+            [4] => 234
+            [5] => 90
+            [6] => 68
+            [7] => 69
+            [8] => 73
+            [9] => 201
+            [10] => 271
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[18-Feb-2026 17:17:14 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 55
+    [2] => 58
+    [3] => 235
+    [4] => 234
+    [5] => 90
+    [6] => 68
+    [7] => 69
+    [8] => 73
+    [9] => 201
+    [10] => 271
+)
+
+[18-Feb-2026 17:17:14 UTC] Contenido de servicios: 107, 55, 58, 235, 234, 90, 68, 69, 73, 201, 271
+[18-Feb-2026 17:38:13 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 17:38:13 UTC] POST completo: Array
+(
+    [id_atencion] => 412
+    [id_cliente] => 213
+    [inputNumero] => 351
+    [inputFecha] => 2026-02-17T11:37
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-17
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 56
+            [1] => 68
+            [2] => 69
+            [3] => 73
+            [4] => 90
+            [5] => 107
+            [6] => 108
+            [7] => 109
+            [8] => 110
+            [9] => 158
+            [10] => 234
+            [11] => 235
+            [12] => 44
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[18-Feb-2026 17:38:13 UTC] Servicios recibido: Array
+(
+    [0] => 56
+    [1] => 68
+    [2] => 69
+    [3] => 73
+    [4] => 90
+    [5] => 107
+    [6] => 108
+    [7] => 109
+    [8] => 110
+    [9] => 158
+    [10] => 234
+    [11] => 235
+    [12] => 44
+)
+
+[18-Feb-2026 17:38:13 UTC] Contenido de servicios: 56, 68, 69, 73, 90, 107, 108, 109, 110, 158, 234, 235, 44
+[18-Feb-2026 17:40:58 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 17:40:58 UTC] POST completo: Array
+(
+    [id_atencion] => 450
+    [id_cliente] => 
+    [inputNumero] => 389
+    [inputFecha] => 2026-02-17T11:40
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-17
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 235
+            [2] => 234
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[18-Feb-2026 17:40:58 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 235
+    [2] => 234
+)
+
+[18-Feb-2026 17:40:58 UTC] Contenido de servicios: 107, 235, 234
+[18-Feb-2026 17:47:00 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 17:47:00 UTC] POST completo: Array
+(
+    [id_atencion] => 456
+    [id_cliente] => 
+    [inputNumero] => 395
+    [inputFecha] => 2026-02-17T11:46
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-17
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 107
+            [2] => 55
+            [3] => 58
+            [4] => 235
+            [5] => 234
+            [6] => 90
+            [7] => 68
+            [8] => 69
+            [9] => 73
+            [10] => 110
+            [11] => 108
+            [12] => 109
+            [13] => 44
+        )
+
+    [totalorden] => 300.00
+    [abono] => 
+    [saldo] => 300.00
+)
+
+[18-Feb-2026 17:47:00 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 107
+    [2] => 55
+    [3] => 58
+    [4] => 235
+    [5] => 234
+    [6] => 90
+    [7] => 68
+    [8] => 69
+    [9] => 73
+    [10] => 110
+    [11] => 108
+    [12] => 109
+    [13] => 44
+)
+
+[18-Feb-2026 17:47:00 UTC] Contenido de servicios: 32, 107, 55, 58, 235, 234, 90, 68, 69, 73, 110, 108, 109, 44
+[18-Feb-2026 17:53:11 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 17:53:11 UTC] POST completo: Array
+(
+    [id_atencion] => 468
+    [id_cliente] => 
+    [inputNumero] => 407
+    [inputFecha] => 2026-02-18T11:52
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-02-18
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 320
+        )
+
+    [totalorden] => 300.00
+    [abono] => 
+    [saldo] => 300.00
+)
+
+[18-Feb-2026 17:53:11 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 320
+)
+
+[18-Feb-2026 17:53:11 UTC] Contenido de servicios: 32, 320
+[18-Feb-2026 17:56:12 UTC] === DEBUG SERVICIOS ===
+[18-Feb-2026 17:56:12 UTC] POST completo: Array
+(
+    [id_atencion] => 467
+    [id_cliente] => 
+    [inputNumero] => 406
+    [inputFecha] => 2026-02-18T11:56
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 107
+            [1] => 55
+            [2] => 58
+            [3] => 235
+            [4] => 234
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[18-Feb-2026 17:56:12 UTC] Servicios recibido: Array
+(
+    [0] => 107
+    [1] => 55
+    [2] => 58
+    [3] => 235
+    [4] => 234
+)
+
+[18-Feb-2026 17:56:12 UTC] Contenido de servicios: 107, 55, 58, 235, 234
+[05-Mar-2026 16:46:00 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 16:46:00 UTC] POST completo: Array
+(
+    [id_atencion] => 496
+    [id_cliente] => 131
+    [inputNumero] => 435
+    [inputFecha] => 2026-02-27T10:45
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 239
+            [1] => 210
+            [2] => 107
+            [3] => 55
+            [4] => 235
+            [5] => 234
+            [6] => 195
+            [7] => 196
+            [8] => 197
+            [9] => 198
+            [10] => 272
+        )
+
+    [totalorden] => 200.00
+    [abono] => 
+    [saldo] => 200.00
+)
+
+[05-Mar-2026 16:46:00 UTC] Servicios recibido: Array
+(
+    [0] => 239
+    [1] => 210
+    [2] => 107
+    [3] => 55
+    [4] => 235
+    [5] => 234
+    [6] => 195
+    [7] => 196
+    [8] => 197
+    [9] => 198
+    [10] => 272
+)
+
+[05-Mar-2026 16:46:00 UTC] Contenido de servicios: 239, 210, 107, 55, 235, 234, 195, 196, 197, 198, 272
+[05-Mar-2026 16:49:12 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 16:49:12 UTC] POST completo: Array
+(
+    [id_atencion] => 496
+    [id_cliente] => 131
+    [inputNumero] => 435
+    [inputFecha] => 2026-02-27T10:48
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 55
+            [1] => 107
+            [2] => 195
+            [3] => 196
+            [4] => 197
+            [5] => 198
+            [6] => 210
+            [7] => 234
+            [8] => 235
+            [9] => 239
+            [10] => 272
+            [11] => 199
+        )
+
+    [totalorden] => 200.00
+    [abono] => 0
+    [saldo] => 200.00
+)
+
+[05-Mar-2026 16:49:12 UTC] Servicios recibido: Array
+(
+    [0] => 55
+    [1] => 107
+    [2] => 195
+    [3] => 196
+    [4] => 197
+    [5] => 198
+    [6] => 210
+    [7] => 234
+    [8] => 235
+    [9] => 239
+    [10] => 272
+    [11] => 199
+)
+
+[05-Mar-2026 16:49:12 UTC] Contenido de servicios: 55, 107, 195, 196, 197, 198, 210, 234, 235, 239, 272, 199
+[05-Mar-2026 17:24:59 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:24:59 UTC] POST completo: Array
+(
+    [id_atencion] => 492
+    [id_cliente] => 
+    [inputNumero] => 431
+    [inputFecha] => 2026-03-02T11:24
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-03-02
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 17:24:59 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[05-Mar-2026 17:24:59 UTC] Contenido de servicios: 32
+[05-Mar-2026 17:28:59 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:28:59 UTC] POST completo: Array
+(
+    [id_atencion] => 492
+    [id_cliente] => 
+    [inputNumero] => 431
+    [inputFecha] => 2026-03-02T11:24
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-03-02
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 119
+            [2] => 116
+            [3] => 115
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 17:28:59 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 119
+    [2] => 116
+    [3] => 115
+)
+
+[05-Mar-2026 17:28:59 UTC] Contenido de servicios: 32, 119, 116, 115
+[05-Mar-2026 17:29:59 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:29:59 UTC] POST completo: Array
+(
+    [id_atencion] => 492
+    [id_cliente] => 
+    [inputNumero] => 431
+    [inputFecha] => 2026-03-02T11:29
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-03-02
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 115
+            [2] => 116
+            [3] => 119
+        )
+
+    [totalorden] => 0
+    [abono] => 0
+    [saldo] => 0
+)
+
+[05-Mar-2026 17:29:59 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 115
+    [2] => 116
+    [3] => 119
+)
+
+[05-Mar-2026 17:29:59 UTC] Contenido de servicios: 32, 115, 116, 119
+[05-Mar-2026 17:32:11 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:32:11 UTC] POST completo: Array
+(
+    [id_atencion] => 490
+    [id_cliente] => 
+    [inputNumero] => 429
+    [inputFecha] => 2026-03-02T11:32
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-03-02
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 200.00
+    [abono] => 
+    [saldo] => 200.00
+)
+
+[05-Mar-2026 17:32:11 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[05-Mar-2026 17:32:11 UTC] Contenido de servicios: 33
+[05-Mar-2026 17:34:24 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:34:24 UTC] POST completo: Array
+(
+    [id_atencion] => 500
+    [id_cliente] => 
+    [inputNumero] => 439
+    [inputFecha] => 2026-03-02T11:34
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 17:34:24 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[05-Mar-2026 17:34:24 UTC] Contenido de servicios: 32
+[05-Mar-2026 17:37:28 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:37:28 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 263
+    [inputNumero] => 
+    [inputFecha] => 2026-03-02T11:36
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-03-02
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 17:37:28 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[05-Mar-2026 17:37:28 UTC] Contenido de servicios: 33
+[05-Mar-2026 17:38:32 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:38:32 UTC] POST completo: Array
+(
+    [id_atencion] => 520
+    [id_cliente] => 
+    [inputNumero] => 459
+    [inputFecha] => 2026-03-02T11:38
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-03-02
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 17:38:32 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[05-Mar-2026 17:38:32 UTC] Contenido de servicios: 32
+[05-Mar-2026 17:53:41 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:53:41 UTC] POST completo: Array
+(
+    [id_atencion] => 493
+    [id_cliente] => 262
+    [inputNumero] => 432
+    [inputFecha] => 2026-03-02T11:42
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 17:53:41 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[05-Mar-2026 17:53:41 UTC] Contenido de servicios: 32
+[05-Mar-2026 17:56:42 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:56:42 UTC] POST completo: Array
+(
+    [id_atencion] => 500
+    [id_cliente] => 
+    [inputNumero] => 439
+    [inputFecha] => 2026-03-02T11:56
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+            [1] => 107
+            [2] => 239
+            [3] => 55
+            [4] => 58
+            [5] => 235
+            [6] => 234
+            [7] => 200
+            [8] => 271
+            [9] => 322
+        )
+
+    [totalorden] => 0.00
+    [abono] => 0
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 17:56:42 UTC] Servicios recibido: Array
+(
+    [0] => 32
+    [1] => 107
+    [2] => 239
+    [3] => 55
+    [4] => 58
+    [5] => 235
+    [6] => 234
+    [7] => 200
+    [8] => 271
+    [9] => 322
+)
+
+[05-Mar-2026 17:56:42 UTC] Contenido de servicios: 32, 107, 239, 55, 58, 235, 234, 200, 271, 322
+[05-Mar-2026 17:59:24 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 17:59:24 UTC] POST completo: Array
+(
+    [id_atencion] => 489
+    [id_cliente] => 
+    [inputNumero] => 428
+    [inputFecha] => 2026-03-02T11:59
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 37
+        )
+
+    [totalorden] => 350.00
+    [abono] => 
+    [saldo] => 350.00
+)
+
+[05-Mar-2026 17:59:24 UTC] Servicios recibido: Array
+(
+    [0] => 37
+)
+
+[05-Mar-2026 17:59:24 UTC] Contenido de servicios: 37
+[05-Mar-2026 18:01:40 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 18:01:40 UTC] POST completo: Array
+(
+    [id_atencion] => 488
+    [id_cliente] => 
+    [inputNumero] => 427
+    [inputFecha] => 2026-03-02T12:01
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-03-02
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 300.00
+    [abono] => 
+    [saldo] => 300.00
+)
+
+[05-Mar-2026 18:01:40 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[05-Mar-2026 18:01:40 UTC] Contenido de servicios: 32
+[05-Mar-2026 18:02:58 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 18:02:58 UTC] POST completo: Array
+(
+    [id_atencion] => 494
+    [id_cliente] => 
+    [inputNumero] => 433
+    [inputFecha] => 2026-03-02T12:02
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-03-02
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 18:02:58 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[05-Mar-2026 18:02:58 UTC] Contenido de servicios: 32
+[05-Mar-2026 18:06:10 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 18:06:10 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 264
+    [inputNumero] => 
+    [inputFecha] => 2026-03-02T12:05
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 2026-03-02
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 32
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 18:06:10 UTC] Servicios recibido: Array
+(
+    [0] => 32
+)
+
+[05-Mar-2026 18:06:10 UTC] Contenido de servicios: 32
+[05-Mar-2026 18:07:59 UTC] === DEBUG SERVICIOS ===
+[05-Mar-2026 18:07:59 UTC] POST completo: Array
+(
+    [id_atencion] => 
+    [id_cliente] => 131
+    [inputNumero] => 
+    [inputFecha] => 2026-03-02T12:07
+    [id_medico] => 4
+    [fecha_entrega_resultado] => 
+    [inputStat] => 
+    [notas] => 
+    [servicios] => Array
+        (
+            [0] => 33
+        )
+
+    [totalorden] => 0.00
+    [abono] => 
+    [saldo] => 0.00
+)
+
+[05-Mar-2026 18:07:59 UTC] Servicios recibido: Array
+(
+    [0] => 33
+)
+
+[05-Mar-2026 18:07:59 UTC] Contenido de servicios: 33

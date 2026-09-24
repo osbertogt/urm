@@ -1,0 +1,50 @@
+[27-Jan-2026 16:02:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/datapluscom/public_html/urm/formularios/cons/uro/guardar_atencion.php:103
+Stack trace:
+#0 /home/datapluscom/public_html/urm/formularios/cons/uro/guardar_atencion.php(103): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/datapluscom/public_html/urm/formularios/cons/uro/guardar_atencion.php on line 103
+[17-Feb-2026 22:03:02 UTC] === guardarServicio ===
+[17-Feb-2026 22:03:02 UTC] id_cita: 369, id_servicio: 107, id: 0
+[17-Feb-2026 22:03:02 UTC] Consulta atención: SELECT id FROM tbl_atencion WHERE id_cita = ? LIMIT 1 con id_cita: 369
+[17-Feb-2026 22:03:02 UTC] Resultado búsqueda atención: ENCONTRADA id: 451
+[17-Feb-2026 22:03:02 UTC] ✅ Usando atención existente id: 451
+[17-Feb-2026 22:03:02 UTC] Insertando servicio: INSERT INTO tbl_atencion_laboratorios 
+                    (id_atencion, id_servicio, notas, fecha) 
+                    VALUES (?, ?, ?, NOW())
+[17-Feb-2026 22:03:02 UTC] ✅ Operación exitosa. Filas afectadas: 1, Insert ID: 33
+[17-Feb-2026 22:03:21 UTC] === guardarServicio ===
+[17-Feb-2026 22:03:21 UTC] id_cita: 369, id_servicio: 239, id: 0
+[17-Feb-2026 22:03:21 UTC] Consulta atención: SELECT id FROM tbl_atencion WHERE id_cita = ? LIMIT 1 con id_cita: 369
+[17-Feb-2026 22:03:21 UTC] Resultado búsqueda atención: ENCONTRADA id: 451
+[17-Feb-2026 22:03:21 UTC] ✅ Usando atención existente id: 451
+[17-Feb-2026 22:03:21 UTC] Insertando servicio: INSERT INTO tbl_atencion_laboratorios 
+                    (id_atencion, id_servicio, notas, fecha) 
+                    VALUES (?, ?, ?, NOW())
+[17-Feb-2026 22:03:21 UTC] ✅ Operación exitosa. Filas afectadas: 1, Insert ID: 34
+[17-Feb-2026 22:03:56 UTC] === guardarServicio ===
+[17-Feb-2026 22:03:56 UTC] id_cita: 374, id_servicio: 60, id: 0
+[17-Feb-2026 22:03:56 UTC] Consulta atención: SELECT id FROM tbl_atencion WHERE id_cita = ? LIMIT 1 con id_cita: 374
+[17-Feb-2026 22:03:56 UTC] Resultado búsqueda atención: ENCONTRADA id: 456
+[17-Feb-2026 22:03:56 UTC] ✅ Usando atención existente id: 456
+[17-Feb-2026 22:03:56 UTC] Insertando servicio: INSERT INTO tbl_atencion_laboratorios 
+                    (id_atencion, id_servicio, notas, fecha) 
+                    VALUES (?, ?, ?, NOW())
+[17-Feb-2026 22:03:56 UTC] ✅ Operación exitosa. Filas afectadas: 1, Insert ID: 35
+[17-Feb-2026 22:04:59 UTC] === guardarServicio ===
+[17-Feb-2026 22:04:59 UTC] id_cita: 373, id_servicio: 60, id: 0
+[17-Feb-2026 22:04:59 UTC] Consulta atención: SELECT id FROM tbl_atencion WHERE id_cita = ? LIMIT 1 con id_cita: 373
+[17-Feb-2026 22:04:59 UTC] Resultado búsqueda atención: ENCONTRADA id: 453
+[17-Feb-2026 22:04:59 UTC] ✅ Usando atención existente id: 453
+[17-Feb-2026 22:04:59 UTC] Insertando servicio: INSERT INTO tbl_atencion_laboratorios 
+                    (id_atencion, id_servicio, notas, fecha) 
+                    VALUES (?, ?, ?, NOW())
+[17-Feb-2026 22:04:59 UTC] ✅ Operación exitosa. Filas afectadas: 1, Insert ID: 36
+[17-Feb-2026 22:05:25 UTC] === guardarServicio ===
+[17-Feb-2026 22:05:25 UTC] id_cita: 373, id_servicio: 107, id: 0
+[17-Feb-2026 22:05:25 UTC] Consulta atención: SELECT id FROM tbl_atencion WHERE id_cita = ? LIMIT 1 con id_cita: 373
+[17-Feb-2026 22:05:25 UTC] Resultado búsqueda atención: ENCONTRADA id: 453
+[17-Feb-2026 22:05:25 UTC] ✅ Usando atención existente id: 453
+[17-Feb-2026 22:05:25 UTC] Insertando servicio: INSERT INTO tbl_atencion_laboratorios 
+                    (id_atencion, id_servicio, notas, fecha) 
+                    VALUES (?, ?, ?, NOW())
+[17-Feb-2026 22:05:25 UTC] ✅ Operación exitosa. Filas afectadas: 1, Insert ID: 37

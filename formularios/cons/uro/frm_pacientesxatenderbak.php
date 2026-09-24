@@ -1,0 +1,696 @@
+<?php
+require_once '../../../assets/dbc.php';
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        .modal-dialog {
+            max-width: 90%;
+        }
+        .modal-body {
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        .card-header-azul {
+            background-color: #2c5aa0;
+            color: white;
+        }
+        .card-header-verde {
+            background-color: #28a745;
+            color: white;
+        }
+        .card-header-lila {
+            background-color: #9b59b6;
+            color: white;
+        }
+        .card-header-naranja {
+            background-color: #fd7e14;
+            color: white;
+        }
+        .card-header-rojo {
+            background-color: #dc3545;
+            color: white;
+        }
+        .anamnesis-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container mt-4">
+  <h4><i class="bi bi-file-medical"></i> Citas programadas urología</h4>
+  <table id="tablaFichas" class="table table-bordered table-striped table-hover w-100">
+    <thead class="table-light">
+      <tr>
+        <th>ID</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Cliente</th>
+        <th>Médico</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<!-- Modal para ficha médica -->
+    <div class="modal fade" id="modalAtencion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header card-header-azul">
+                    <h5 class="modal-title">
+					<i class="bi bi-clipboard-plus"></i>Registro de consulta urología</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="formAtencion" method="POST">
+                    <div class="modal-body">
+                        <input type="hidden" name="id_atencion_consulta" id="id_atencion_consulta">
+						<input type="hidden" id="id_cita" name="id_cita">
+						<input type="hidden" id="id_cliente" name="id_cliente">
+						<input type="hidden" id="id_medico" name="id_medico">
+						<div class="card mb-2">
+						  <div class="card-header" style="background-color: #CCCCFF; color: black;"><i class="bi bi-person"></i> Datos generales</div>
+						  <div class="card-body">
+							<div class="row g-2">
+							  <div class="col-md-4">
+								<label for="nombre_cliente" class="form-label">Paciente</label>
+								<input type="text" name="nombre_cliente" id="nombre_cliente" class="form-control"  disabled>
+							  </div>
+							  <div class="col-md-2">
+								<label for="sexo_cliente" class="form-label">Sexo</label>
+								<input type="text" name="sexo_cliente" id="sexo_cliente" class="form-control" disabled>
+							  </div>
+							  <div class="col-md-1">
+								<label for="edad_cliente" class="form-label">Edad</label>
+								<input type="text" name="edad_cliente" id="edad_cliente" class="form-control"  disabled>
+							  </div>
+							  <div class="col-md-3">
+								<label for="domicilio_cliente" class="form-label">Domicilio</label>
+								<input type="text" name="domicilio_cliente" id="domicilio_cliente" class="form-control" disabled>
+							  </div>
+							</div>
+						  </div>
+						</div>
+						  <!-- Tabs -->
+						  <ul class="nav nav-tabs" id="tabsAtencion" role="tablist">
+							<li class="nav-item">
+							  <button class="nav-link active" id="tabFicha-tab" data-bs-toggle="tab" data-bs-target="#tabFicha" type="button" role="tab">
+								<i class="bi bi-journal-text"></i> Ficha
+							  </button>
+							</li>
+							<li class="nav-item">
+							  <button class="nav-link" id="tabResultados-tab" data-bs-toggle="tab" data-bs-target="#tabResults" type="button" role="tab">
+								<i class="bi bi-list-check"></i> Resultados de laboratorio
+							  </button>
+							</li>
+							<li class="nav-item">
+							  <button class="nav-link" id="tabHistorial-tab" data-bs-toggle="tab" data-bs-target="#tabHistorial" type="button" role="tab">
+								<i class="bi bi-calendar2-week"></i> Historial
+							  </button>
+							</li>
+						  </ul>
+						<div class="tab-content mt-3">
+							<!-- TAB 1: FICHA -->
+							<div class="tab-pane fade show active" id="tabFicha" role="tabpanel">
+								<!-- Datos generales -->
+								<div >
+									<!-- Tipo de admisión y fecha -->
+								  <div class="row g-3 mb-3">
+									<div class="col-md-6">
+									  <label>Tipo de consulta</label>
+									  <select class="form-select" name="id_motivo_admision" id="id_motivo_admision"></select>
+									</div>
+									<div class="col-md-6">
+									  <label>Fecha de atención</label>
+									  <input type="date" name="fecha" id="fecha" class="form-control" value="<?=date('Y-m-d')?>" required>
+									</div>
+								  </div>
+								   
+									<!-- Motivo de Consulta -->
+									<div class="card mb-3">
+										<div class="card-header card-header-verde">
+											<h6 class="mb-0"><i class="bi bi-chat-dots"></i> Motivo de Consulta</h6>
+										</div>
+										<div class="card-body">
+											<textarea class="form-control" name="motivo_consulta" id="motivo_consulta" rows="3" placeholder="Describa el motivo de la consulta"></textarea>
+										</div>
+									</div>
+									
+									<!-- Síntomas -->
+									<div class="card mb-3">
+										<div class="card-header card-header-lila">
+											<h6 class="mb-0"><i class="bi bi-exclamation-triangle"></i> Historia de enfermedad actual</h6>
+										</div>
+										<div class="card-body">
+											<textarea class="form-control" name="sintomas" id="sintomas" rows="3" placeholder="Describa los síntomas presentados"></textarea>
+										</div>
+									</div>
+									<!-- Anamnesis Remota -->
+									<div class="card mb-3">
+										<div class="card-header card-header-naranja d-flex align-items-center">
+											<h6 class="mb-0"><i class="bi bi-clipboard-check"></i> Antecedentes</h6>
+											<button class="btn btn-sm btn-light ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard" aria-expanded="false" aria-controls="collapseCard">
+												<i class="bi bi-chevron-down"></i>
+											</button>
+										</div>
+										<div id="collapseCard" class="collapse">
+										<div class="card-body">
+											<?php
+											$campos_anamnesis = [
+												'alergias' => 'Alergias',
+												'ecronicas' => 'Enfermedades Crónicas',
+												'aquirurgi' => 'Antecedentes Quirúrgicos',
+												'lesiones' => 'Lesiones Previas',
+												'embarazo' => 'Embarazo',
+												'etsvih' => 'ETS/VIH',
+												'farmacos' => 'Uso de Fármacos',
+												'otros' => 'Otros Antecedentes'
+											];
+											
+											foreach ($campos_anamnesis as $key => $label) {
+												echo '
+												<div class="anamnesis-item">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label">' . $label . '</label>
+														</div>
+														<div class="col-md-2">
+															<div class="form-check">
+																<input class="form-check-input" type="checkbox" name="anam_r_' . $key . '_si" id="anam_r_' . $key . '_si">
+																<label class="form-check-label" for="anam_r_' . $key . '_si">Sí</label>
+															</div>
+														</div>
+														<div class="col-md-2">
+															<div class="form-check">
+																<input class="form-check-input" type="checkbox" name="anam_r_' . $key . '_no" id="anam_r_' . $key . '_no">
+																<label class="form-check-label" for="anam_r_' . $key . '_no">No</label>
+															</div>
+														</div>
+														<div class="col-md-4">
+															<input type="text" class="form-control" name="anam_r_' . $key . '_obs" placeholder="Observaciones">
+														</div>
+													</div>
+												</div>';
+											}
+											?>
+										</div>
+										</div>
+									</div>
+					
+
+									<!-- Examen físico -->
+									<div class="card mb-3">
+									  <div class="card-header bg-info text-white">
+										<i class="bi bi-person-lines-fill"></i> Examen físico
+									  </div>
+									  <div class="card-body">
+										<textarea class="form-control" name="examen_fisico" rows="3"></textarea>
+									  </div>
+									</div>
+
+									<!-- Signos vitales -->
+									<div class="card mb-3">
+									  <div class="card-header bg-warning text-dark">
+										<i class="bi bi-activity"></i> Signos vitales
+									  </div>
+									  <div class="card-body row g-3">
+										<div class="col-md-3">
+										  <label>Temperatura (°C)</label>
+										  <input type="number" step="0.1" class="form-control" name="sv_temperatura" id="sv_temperatura">
+										</div>
+										<div class="col-md-3">
+										  <label>Frec. Cardiaca</label>
+										  <input type="number" class="form-control" name="sv_frecuencia_cardiaca" id="sv_frecuencia_cardiaca">
+										</div>
+										<div class="col-md-3">
+										  <label>Frec. Respiratoria</label>
+										  <input type="number" class="form-control" name="sv_frecuencia_respiratoria" id="sv_frecuencia_respiratoria">
+										</div>
+										<div class="col-md-3">
+										  <label>Presión arterial</label>
+										  <input type="text" class="form-control" name="sv_presion_arterial" id="sv_presion_arterial">
+										</div>
+									  </div>
+									</div>
+																
+									<!-- Diagnóstico -->
+									<div class="card mb-3">
+										<div class="card-header" style="background-color: #6eaff1; color: white;">
+											<h6 class="mb-0"><i class="bi bi-clipboard2-pulse"></i> Impresión clínica</h6>
+										</div>
+										<div class="card-body">
+											<textarea class="form-control" name="diagnostico" rows="3" ></textarea>
+										</div>
+									</div>
+									
+									<!-- Indicaciones Médicas -->
+									<div class="card mb-3">
+										<div class="card-header" style="background-color: #5F9EA0; color: white;">
+											<h6 class="mb-0"><i class="bi bi-prescription2"></i> Indicaciones médicas</h6>
+										</div>
+										<div class="card-body">
+											<textarea class="form-control" name="tratamiento" id="tratamiento" rows="3" placeholder="Indicaciones médicas"></textarea>
+										</div>
+									</div>
+									<!-- Receta de medicamentos -->
+									<div class="card mb-3">
+									  <div class="card-header card-header-azul">
+										<h6 class="mb-0"><i class="bi bi-prescription2"></i> Receta de medicamentos</h6>
+									  </div>
+									  <div class="card-body">
+										<textarea class="form-control" id="receta" name="receta" rows="3" placeholder="Receta de medicamentos"></textarea>
+										<button type="button" id="btnPdfReceta" class="btn btn-light mt-3">
+										  <i class="bi bi-prescription"></i> Generar receta
+										</button>
+									  </div>
+									</div>
+									<script>
+									$(document).ready(function() {
+									  $('#btnPdfReceta').on('click', function() {
+										const tratamiento = $('#tratamiento').val();
+										const receta = $('#receta').val().trim();
+										const paciente = $('#nombre_cliente').val().trim();
+										const fecha = $('#fecha').val();
+										const proxima_cita = $('#proxima_cita').val();
+
+										if (!receta) {
+										  alert('El área de receta no puede estar vacía!');
+										  return;
+										}
+
+										// Generar PDF
+										const url = FORM_URL + 'cons/uro/generar_receta_pdf.php?' + $.param({
+										  receta: receta,
+										  paciente: paciente,
+										  fecha: fecha,
+										  tratamiento: tratamiento
+										});
+
+										window.open(url, '_blank');
+									  });
+									});
+									</script>
+									<div class="col-md-4">
+									  <label>Próxima cita</label>
+									  <input type="date" name="proxima_cita" id="proxima_cita" class="form-control">
+									</div>
+									<br>
+									<!-- Laboratorio -->
+									<div class="card mb-3">
+									  <div class="card-header bg-success text-white">
+										<i class="bi bi-flask"></i> Laboratorios
+									  </div>
+									  <div class="card-body">
+										<textarea class="form-control" name="laboratorios" id="laboratorios" rows="3"></textarea>
+										<button type="button" id="btnPdfOrden" class="btn btn-light mt-3">
+										  <i class="bi bi-flask"></i> Generar orden
+										</button>
+									  </div>
+									</div>
+									<script>
+										$(document).ready(function() {
+										  $('#btnPdfOrden').on('click', function() {
+											const laboratorios = $('#laboratorios').val().trim();
+											const paciente = $('#nombre_cliente').val();
+											const fecha = $('#fecha').val();
+
+											if (!laboratorios) {
+											  alert('El área de laboratorios no puede estar vacía!');
+											  return;
+											}
+											const olaburl = FORM_URL + 'cons/uro/generar_ordenlab.php?' + $.param({
+											  laboratorios: laboratorios,
+											  paciente: paciente,
+											  fecha: fecha
+											});
+											window.open(olaburl, '_blank');
+										  });
+										});
+									</script>
+								</div>
+							</div> <!-- fin del div tab ficha-->
+							<!-- TAB resultados -->
+							<div class="tab-pane fade" id="tabResults" role="tabpanel">
+								<table id="tablaInformes" class="table table-striped table-bordered table-sm nowrap" style="width:100%">
+									<thead class="table-warning">
+										<tr>
+											<th>Fecha</th>
+											<th>Nombre del Archivo</th>
+											<th>Visualizar</th>
+										</tr>
+									</thead>
+									<tbody></tbody>
+								</table>
+							</div>
+							<!-- TAB historial -->
+							<div class="tab-pane fade" id="tabHistorial" role="tabpanel">
+							  <table id="tblHistorial" class="table table-striped table-bordered display nowrap" style="width:100%">
+								<thead>
+								  <tr>
+									<th>Fecha</th>
+									<th>Número</th>
+									<th>Especialidad</th>
+									<th>Motivo admisión</th>
+									<th>Paciente</th>
+									<th>Médico</th>
+									<th>Acciones</th>
+								  </tr>
+								</thead>
+								<tbody></tbody>
+							  </table>
+							</div>
+							
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+						<button type="button" id="btnToggle" class="btn btn-light">
+							<i class="bi bi-tag"></i>
+						</button>
+					    <input type="number" id="precioConsulta" name="precioConsulta" class="form-control d-none" style="width: 120px;" min="0">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-success">Guardar consulta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Scripts -->
+
+<script>
+	if (typeof tabla === 'undefined') {
+		var tabla;
+		var ajaxUrl;
+	}
+	ajaxUrl = FORM_URL+'cons/uro/atenciones_ajax.php';
+	
+$(document).ready(function () {
+	if ($.fn.DataTable.isDataTable('#tablaFichas')) {
+		$('#tablafiFichas').DataTable().destroy();
+	}
+
+    tabla = $('#tablaFichas').DataTable({
+    ajax: {
+      url: FORM_URL+'cons/uro/fichas_medicas_actions.php',
+      type: 'POST',
+      data: { action: 'listar', estado: '3' },
+      dataSrc: ''
+    },
+    columns: [
+      { data: 'id' },
+      { data: 'fecha' },
+      { data: 'hora' },
+      { data: 'cliente' },
+      { data: 'medico' },
+      {
+        data: null,
+        orderable: false,
+        render: function (data) {
+          return `
+            <button class="btn btn-sm btn-info btnFicha" 
+              data-id="${data.id}"
+			  data-id_cliente="${data.id_cliente}"			  
+			  data-cliente="${data.cliente}"			  
+			  data-edad="${data.edad}"			  
+			  data-sexo="${data.sexo}"	
+			  data-id_medico="${data.id_medico}"	
+			  data-direccion="${data.direccion}"			  
+              data-bs-toggle="tooltip" 
+              title="Ver ficha médica">
+              <i class="bi bi-file-earmark-medical"></i>
+            </button>`;
+        }
+      }
+    ],
+    order: [[1, 'desc'], [2, 'asc']],
+    responsive: true,
+    language: {
+      url: "//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json"
+    }
+  });
+
+function decodificar(texto) {
+    if (!texto) return '';
+    
+    // Manejar escape múltiple recursivamente
+    let resultado = texto;
+    let anterior;
+    
+    do {
+        anterior = resultado;
+        resultado = resultado
+            .replace(/&#38;/g, '&')
+            .replace(/&amp;/g, '&')
+            .replace(/&#13;&#10;/g, '\n')
+            .replace(/\\n/g, '\n')
+            .replace(/\\r/g, '\r');
+    } while (resultado !== anterior); 
+    
+    return resultado;
+}
+
+
+  // Evento para abrir ficha médica
+	$('#tablaFichas').on('click', '.btnFicha', function () {
+	  const id = $(this).data('id');
+	  const id_cliente = $(this).data('id_cliente');
+	  const id_medico = $(this).data('id_medico');
+	  const edad = $(this).data('edad');
+	  const direccion = $(this).data('direccion');
+	  const paciente = $(this).data('cliente');
+	  const sexo = $(this).data('sexo');
+
+	  $('#modalAtencion').modal('show');
+
+	  $('#modalAtencion').off('shown.bs.modal').on('shown.bs.modal', function () {
+		$('#id_cita').val(id);
+		$('#id_cliente').val(id_cliente);
+		$('#id_medico').val(id_medico);
+		$('#nombre_cliente').val(paciente);
+		$('#sexo_cliente').val(sexo);
+		$('#edad_cliente').val(edad);
+		$('#domicilio_cliente').val(direccion);
+	  });
+
+	  $.getJSON(FORM_URL + 'cons/uro/obtener_atencion_consulta.php', { id_cita: id })
+		.done(function (res) {
+				console.log('Respuesta completa:', res);
+				console.log('Datos recibidos:', res.data);
+
+		  if (res && res.success && res.data) {
+			const d = res.data;
+			const dec = decodificar;
+
+			$('#datos_parto').val(dec(d.datos_parto));
+			$('#datos_recien_nacido').val(dec(d.datos_recien_nacido));
+			$('#alimentacion_1er_anio').val(dec(d.alimentacion_1er_anio));
+			$('#desarrollo_psicomotor').val(dec(d.desarrollo_psicomotor));
+			$('#motivo_consulta').val(dec(d.motivo_consulta));
+			$('#sintomas').val(dec(d.sintomas));
+			$('#examen_fisico').val(dec(d.examen_fisico));
+			$('#diagnostico').val(dec(d.diagnostico));
+			$('#tratamiento').val(dec(d.tratamiento));
+			$('#medicamentos_administrados').val(dec(d.medicamentos_administrados));
+			$('#receta').val(dec(d.receta));
+			$('#laboratorios').val(dec(d.laboratorios));
+			$('#sv_temperatura').val(d.sv_temperatura ?? '');
+			$('#sv_frecuencia_cardiaca').val(d.sv_frecuencia_cardiaca ?? '');
+			$('#sv_frecuencia_respiratoria').val(d.sv_frecuencia_respiratoria ?? '');
+			$('#sv_presion_arterial').val(d.sv_presion_arterial ?? '');
+			$('#talla').val(d.talla ?? '');
+			$('#peso').val(d.peso ?? '');
+			$('#circ_cefalica').val(d.circ_cefalica ?? '');
+
+		  } else {
+			// si no hay datos, opcionalmente limpiar (ya lo limpiamos antes)
+			console.log('No hay consulta registrada para esta cita');
+		  }
+		})
+		.fail(function (jqXHR, textStatus, err) {
+		  console.error('Error cargando datos de atencion_consulta:', textStatus, err);
+		})
+		.always(function () {
+		  $('#modalAtencion').modal('show');
+		});
+		// Inicializar/Recargar DataTable de informes
+		inicializarDataTableInformes(id_cliente);
+	  
+	});
+	// evento cuando se muestra el tab de Resultados
+	$('#tabResultados-tab').on('shown.bs.tab', function() {
+		const idCliente = $("#id_cliente").val();
+		
+		if (idCliente) {
+			inicializarDataTableInformes(idCliente);
+		} else {
+			console.warn('No hay ID cliente para cargar informes');
+		}
+	});
+
+	function inicializarDataTableInformes(idCliente) {
+		
+		// Destruir si ya existe
+		if ($.fn.DataTable.isDataTable('#tablaInformes')) {
+			$('#tablaInformes').DataTable().destroy();
+			$('#tablaInformes').empty(); // Limpiar
+		}
+		
+		// Primero hacer una prueba directa
+		$.ajax({
+			url: FORM_URL + "cons/uro/listar_informes.php",
+			type: "POST",
+			data: { id_cliente: idCliente, FORM_URL: FORM_URL },
+			success: function(response) {
+				
+				// Si la respuesta es buena, inicializar DataTable
+				if (!$.fn.DataTable.isDataTable('#tablaInformes')) {
+					$('#tablaInformes').DataTable({
+						serverSide: false,
+						data: response.data, // Usar datos directamente
+						columns: [
+							{ data: "fecha" },
+							{ data: "nombre_original" },
+							{ 
+								data: "ver",
+								orderable: false,
+								searchable: false
+							}
+						],
+						responsive: true,
+						language: {
+							url: "//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json"
+						},
+						initComplete: function() {
+						}
+					});
+				}
+			},
+			error: function(xhr, status, error) {
+				if (!$.fn.DataTable.isDataTable('#tablaInformes')) {
+					// Inicializar DataTable vacío
+					$('#tablaInformes').DataTable({
+						data: [],
+						columns: [
+							{ data: "fecha" },
+							{ data: "nombre_original" },
+							{ data: "ver" }
+						],
+						language: {
+							url: "//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json"
+						}
+					});
+				};
+			}
+		});
+	}
+
+	function cargarSelectMotivos(){
+	$.getJSON(ajaxUrl, { action: 'get_motivos' }, function(data){
+	  let html = '<option value="">Seleccionar...</option>';
+	  data.forEach(m => html += `<option value="${m.id}">${m.nombre}</option>`);
+	  $('#id_motivo_admision').html(html);
+	});
+	}
+	cargarSelectMotivos();
+	
+	$('#formAtencion').submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			url: FORM_URL+'cons/uro/guardar_atencion.php',
+			type: 'POST',
+			data: $(this).serialize(),
+			dataType: 'json', 
+			success: function(result) {
+
+				if (result.success) {
+					$('#modalAtencion').modal('hide');
+					tabla.ajax.reload();
+					alert('Atención guardada correctamente');
+				} else {
+					alert('Error: ' + result.message);
+				}
+			},
+			error: function(xhr, status, error) {
+				console.error("Ajax error:", status, error, xhr.responseText);
+				alert('Error de conexión');
+			}
+		});
+	});
+	$('#btnToggle').on('click', function() {
+	  $('#precioConsulta').toggleClass('d-none');
+	});
+
+});
+</script>
+<script>
+
+let historialDataTable = null;
+
+function inicializarDataTableHistorial() {
+  const idCliente = $("#id_cliente").val();
+  
+  if (!idCliente) {
+    console.warn('No hay ID cliente para cargar historial');
+    return;
+  }
+  
+  // Si ya existe, solo recargar los datos
+  if (historialDataTable) {
+    historialDataTable.ajax.reload();
+    return;
+  }
+  
+  // Inicializar por primera vez
+  historialDataTable = $('#tblHistorial').DataTable({
+    ajax: {
+      url: FORM_URL+'cons/pdt/listar_consultas_historial.php',
+      type: 'POST',
+      data: { id_cliente: idCliente },
+      dataSrc: ''
+    },
+    columns: [
+      { data: 'fecha' },
+      { data: 'numero_ticket' },
+      { data: 'especialidad' },
+      { data: 'motivo' },
+      { data: 'cliente' },
+      { data: 'medico' },
+      {
+        data: null,
+        orderable: false,
+        className: 'text-center',
+        render: function (d) {
+          return `<a class="btn btn-sm btn-outline-primary pdf-btn" target="_blank" 
+                    href="formularios/cons/uro/generar_pdf_consulta.php?id_consulta=${encodeURIComponent(d.id)}" title="Ver datos consulta">
+                    <i class="bi bi-file-medical"></i> 
+                  </a>`;
+        }
+      }
+    ],
+    responsive: true,
+    order: [[0, 'desc']],
+    language: {
+      url: "//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json"
+    }
+  });
+}
+
+// Evento cuando se muestra el tab de Historial
+$('#tabHistorial-tab').on('shown.bs.tab', function() {
+  inicializarDataTableHistorial();
+});
+
+// Limpiar referencia cuando se cierra el modal
+$(document).on('hidden.bs.modal', '#modalAtencion', function() {
+  historialDataTable = null;
+});
+</script>
+
+</body>
+</html>

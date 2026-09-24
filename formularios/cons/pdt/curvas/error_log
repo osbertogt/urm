@@ -1,0 +1,5 @@
+[20-Dec-2025 03:17:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'datapluscom_urm.vw_datos_antro' doesn't exist in /home/datapluscom/public_html/urm/formularios/cons/pdt/curvas/cuvas_oms_ajax.php:26
+Stack trace:
+#0 /home/datapluscom/public_html/urm/formularios/cons/pdt/curvas/cuvas_oms_ajax.php(26): mysqli_prepare()
+#1 {main}
+  thrown in /home/datapluscom/public_html/urm/formularios/cons/pdt/curvas/cuvas_oms_ajax.php on line 26
