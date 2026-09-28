@@ -1,7 +1,8 @@
 <?php
 
 require_once '../../../assets/dbc.php';
-require_once '../../../assets/tcpdf/tcpdf.php'; 
+require_once '../../../assets/tcpdf/tcpdf.php';
+require_once __DIR__ . '/formato_fecha.php'; 
 $id = isset($_GET['id_consulta']) ? (int) $_GET['id_consulta'] : 0;
 if ($id <= 0) {
     http_response_code(400);
@@ -61,7 +62,22 @@ function normalizarTexto($texto) {
 
 class MYPDF extends TCPDF {
     public $header_img = '';
+    // Sección que se está escribiendo; si hay salto de página a media sección se repite su nombre
+    public $seccionActual = null;
+    public $margenSuperiorBase = 50;
     public function Header() {
+        $this->pintarEncabezado();
+
+        if ($this->seccionActual !== null) {
+            $this->SetFont('helvetica', 'B', 9);
+            $this->SetXY($this->original_lMargin, $this->margenSuperiorBase);
+            $this->Cell(0, 5, $this->seccionActual . ' (continuación)', 0, 1, 'L');
+            $this->tMargin = $this->margenSuperiorBase + 7;
+        } else {
+            $this->tMargin = $this->margenSuperiorBase;
+        }
+    }
+    private function pintarEncabezado() {
         if ($this->header_img && file_exists($this->header_img)) {
 			$w = $this->getPageWidth();
 			$h = 0; // alto proporcional
@@ -120,10 +136,35 @@ function row($label, $value) {
     ';
 }
 
+// Si no queda espacio para al menos $mm, pasar a la siguiente página antes de escribir
+function asegurarEspacio($pdf, $mm) {
+    if ($pdf->GetY() + $mm > $pdf->getPageHeight() - $pdf->getBreakMargin()) {
+        $pdf->AddPage();
+    }
+}
+
+function escribirHtml($pdf, $html) {
+    $pdf->writeHTML($html, false, false, true, false, '');
+}
+
+// Un encabezado de grupo (h4) no debe quedar solo al pie de la página
+function escribirTitulo($pdf, $titulo) {
+    asegurarEspacio($pdf, 15);
+    escribirHtml($pdf, '<h4>' . $titulo . '</h4>');
+}
+
+// Cada campo va en su propia tabla para saber qué sección se parte en el salto de página
+function escribirCampo($pdf, $label, $value) {
+    asegurarEspacio($pdf, 8);
+    $pdf->seccionActual = $label;
+    escribirHtml($pdf, '<table cellpadding="0" cellspacing="0" border="0">' . row($label, $value) . '</table>');
+    $pdf->seccionActual = null;
+}
+
 
 $clienteNombre = trim(implode(' ', array_filter([$data['cli_n1'],$data['cli_n2'],$data['cli_a1'],$data['cli_a2']])));
 $medicoNombre  = trim(implode(' ', array_filter([$data['med_n1'],$data['med_n2'],$data['med_a1'],$data['med_a2']])));
-$fechaAtencion = $data['fecha_atencion'];
+$fechaAtencion = formatoFecha($data['fecha_atencion']);
 $numeroTicket  = $data['numero_ticket'];
 $motivo        = $data['motivo_nombre'] ?? '';
 
@@ -146,16 +187,17 @@ $html .= row('Tipo de consulta', $motivo);
 $html .= row('Médico', $medicoNombre);
 $html .= '</table><hr/>';
 
-$html .= '<h4>Datos del paciente</h5><table cellpadding="0" cellspacing="0" border="0">';
+$html .= '<h4>Datos del paciente</h4><table cellpadding="0" cellspacing="0" border="0">';
 $html .= row('Nombre', $clienteNombre);
 $html .= row('Edad (años)', $data['cli_edad']);
 $html .= row('Sexo', $data['sexo_nombre']);
 $html .= '</table><hr/>';
+escribirHtml($pdf, $html);
 
-$html .= '<h4>Motivo e historia</h5><table cellpadding="0" cellspacing="0" border="0">';
-$html .= row('Motivo de consulta', $data['motivo_consulta']);
-$html .= row('Historia enfermedad actual', $historia_enfermedad_actual);
-$html .= '</table><hr/>';
+escribirTitulo($pdf, 'Motivo e historia');
+escribirCampo($pdf, 'Motivo de consulta', $motivo_consulta);
+escribirCampo($pdf, 'Historia enfermedad actual', $historia_enfermedad_actual);
+escribirHtml($pdf, '<hr/>');
 
 $signos = [
     'PA' => $data['sv_presion_arterial'],
@@ -167,26 +209,23 @@ $signosTxt = [];
 foreach ($signos as $etq => $val) {
     $signosTxt[] = '<b>' . $etq . ':</b> ' . htmlspecialchars(trim((string)$val));
 }
-$html .= '<p><b>Signos vitales:</b>&nbsp;&nbsp;&nbsp;&nbsp;' . implode('&nbsp;&nbsp;&nbsp;&nbsp;', $signosTxt) . '</p><hr/>';
+asegurarEspacio($pdf, 8);
+escribirHtml($pdf, '<p><b>Signos vitales:</b>&nbsp;&nbsp;&nbsp;&nbsp;' . implode('&nbsp;&nbsp;&nbsp;&nbsp;', $signosTxt) . '</p><hr/>');
 
-$html .= '<h4>Examen y diagnóstico</h5><table cellpadding="0" cellspacing="0" border="0">';
-$html .= row('Examen físico', $data['examen_fisico']);
-$html .= row('Diagnóstico', $data['diagnostico']);
-$html .= '</table><hr/>';
+escribirTitulo($pdf, 'Examen e impresión clínica');
+escribirCampo($pdf, 'Examen físico', normalizarTexto($data['examen_fisico']));
+escribirCampo($pdf, 'Impresión clínica', $diagnostico);
+escribirHtml($pdf, '<hr/>');
 
-$html .= '<h4>Tratamiento / Medicamentos</h5><table cellpadding="0" cellspacing="0" border="0">';
-$html .= row('Tratamiento', $data['tratamiento']);
-$html .= row('Medicamentos administrados', $data['medicamentos_administrados']);
-$html .= '</table><hr/>';
+escribirTitulo($pdf, 'Medicamentos');
+escribirCampo($pdf, 'Medicamentos administrados', $medicamentos_administrados);
+escribirHtml($pdf, '<hr/>');
 
-$html .= '<h4>Indicaciones / Receta / Laboratorio</h5><table cellpadding="0" cellspacing="0" border="0">';
-$html .= row('Indicaciones médicas', $indicaciones_medicas);
-$html .= row('Receta', $receta);
-$html .= row('Laboratorios', $laboratorios);
-$html .= row('Fecha próxima cita', $data['fecha_proxima_cita']);
-$html .= '</table>';
-
-$pdf->writeHTML($html, true, false, true, false, '');
+escribirTitulo($pdf, 'Indicaciones / Receta / Laboratorio');
+escribirCampo($pdf, 'Indicaciones médicas', $indicaciones_medicas);
+escribirCampo($pdf, 'Receta', $receta);
+escribirCampo($pdf, 'Laboratorios', $laboratorios);
+escribirCampo($pdf, 'Fecha próxima cita', formatoFecha($data['fecha_proxima_cita']));
 
 $filename = 'Ficha_consulta_' . $numeroTicket . '_' . $id . '.pdf';
 $pdf->Output($filename, 'I'); 

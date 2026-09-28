@@ -28,6 +28,10 @@ $medicamentos_administrados = $_POST['medicamentos_administrados'];
 $receta = $_POST['receta'];
 $proxima_cita = $_POST['proxima_cita'];
 $historia_enfermedad = $_POST['historia_enfermedad'];
+$sv_temperatura = substr(trim($_POST['sv_temperatura'] ?? ''), 0, 50);
+$sv_frecuencia_cardiaca = substr(trim($_POST['sv_frecuencia_cardiaca'] ?? ''), 0, 50);
+$sv_frecuencia_respiratoria = substr(trim($_POST['sv_frecuencia_respiratoria'] ?? ''), 0, 50);
+$sv_presion_arterial = substr(trim($_POST['sv_presion_arterial'] ?? ''), 0, 50);
 
 $id_tipo_atencion = 3;
 $id_especialidad = 1;
@@ -66,12 +70,14 @@ try {
                         SET motivo_consulta = ?, historia_enfermedad_actual = ?, diagnostico = ?, indicaciones_medicas = ?, 
 						laboratorios = ?,laboratorios2 = ?,laboratorios3 = ?, 
 						medicamentos_administrados = ?, examen_fisico = ?,
-						receta = ?, fecha_proxima_cita = ?
+						receta = ?, fecha_proxima_cita = ?,
+						sv_temperatura = ?, sv_frecuencia_cardiaca = ?, sv_frecuencia_respiratoria = ?, sv_presion_arterial = ?
                         WHERE id_atencion = ?";
         $stmt2 = $conn->prepare($sql_update2);
-        $stmt2->bind_param("sssssssssssi", $motivo_consulta, $historia_enfermedad, $diagnostico, $indicaciones_medicas, 
-		$laboratorios,$laboratorios2,$laboratorios3, 
-		$medicamentos_administrados, $examen_fisico, $receta, $proxima_cita, $id_atencion);
+        $stmt2->bind_param("sssssssssssssssi", $motivo_consulta, $historia_enfermedad, $diagnostico, $indicaciones_medicas,
+		$laboratorios,$laboratorios2,$laboratorios3,
+		$medicamentos_administrados, $examen_fisico, $receta, $proxima_cita,
+		$sv_temperatura, $sv_frecuencia_cardiaca, $sv_frecuencia_respiratoria, $sv_presion_arterial, $id_atencion);
         $stmt2->execute();
         $stmt2->close();
 
@@ -97,12 +103,14 @@ try {
 
         // 2. Insertar en tbl_atencion_consulta
         $query2 = "INSERT INTO tbl_atencion_consulta (id_atencion, id_tipo_atencion, motivo_consulta, historia_enfermedad_actual, 
-				   diagnostico, indicaciones_medicas, laboratorios, laboratorios2, laboratorios3, medicamentos_administrados, receta, fecha_proxima_cita)
-                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+				   diagnostico, indicaciones_medicas, laboratorios, laboratorios2, laboratorios3, medicamentos_administrados, examen_fisico, receta, fecha_proxima_cita,
+				   sv_temperatura, sv_frecuencia_cardiaca, sv_frecuencia_respiratoria, sv_presion_arterial)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt2 = $conn->prepare($query2);
-        $stmt2->bind_param("iissssssssss", $id_atencion, $id_tipo_atencion, $motivo_consulta, $historia_enfermedad, $diagnostico, 
-		$indicaciones_medicas, $laboratorios, $laboratorios2, $laboratorios3, 
-		$medicamentos_administrados, $receta, $fecha_proxima_cita);
+        $stmt2->bind_param("iisssssssssssssss", $id_atencion, $id_tipo_atencion, $motivo_consulta, $historia_enfermedad, $diagnostico,
+		$indicaciones_medicas, $laboratorios, $laboratorios2, $laboratorios3,
+		$medicamentos_administrados, $examen_fisico, $receta, $proxima_cita,
+		$sv_temperatura, $sv_frecuencia_cardiaca, $sv_frecuencia_respiratoria, $sv_presion_arterial);
         $stmt2->execute();
         $stmt2->close();
 
